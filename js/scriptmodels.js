@@ -8,7 +8,15 @@
         motorola: "https://example.com/oceania-motorola",
         google: "https://example.com/oceania-google",
       },
-      america: {
+      americasul: {
+        apple: "https://example.com/america-apple",
+        samsung: "https://example.com/america-samsung",
+        huawei: "https://example.com/america-huawei",
+        xiaomi: "https://example.com/america-xiaomi",
+        motorola: "https://example.com/oceania-motorola",
+        google: "https://example.com/oceania-google",
+      },
+      americanorte: {
         apple: "https://example.com/america-apple",
         samsung: "https://example.com/america-samsung",
         huawei: "https://example.com/america-huawei",
