@@ -36,29 +36,51 @@
   </div>
   <!-- NÚMERO DO WhatsApp -->
 
-  <header class="header">
-    <nav class="navbar">
-      <div class="logosimfinity">
-        <img src="./assets/imagens/header/logoheader.svg" alt=" LOGO infinity ">
-      </div>
 
-      <ul class="ul-header">
-        <li><a href="#">Planos</a></li>
-        <li><a href="#">Sobre Nós</a></li>
-        <li><a href="#">FAQs</a></li>
-        <li><a href="#">Suporte Técnico</a></li>
-      </ul>
-    </nav>
 
-    <button class="b-acess-client ">
+  <header class="headermenu"  id="header">
+    <div class="divlogo" id="logodesktop">
+      <img src="./assets/imagens/header/logoheader.svg" alt=" LOGO Simfinity" id="logo">
+    </div>
+
+    <nav id="nav">
+    <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+      <span id="hamburger"></span>
+    </button>
+
+    <div class="divlogo" id="logomobile">
+      <img src="./assets/imagens/header/logoheader.svg" alt=" LOGO Simfinity" id="logo">
+    </div>
+
+    <ul id="menu" role="menu">
+      <li id="listhover"><a href="/">Planos</a></li>
+      <li id="listhover"><a href="/">Sobre nós</a></li>
+      <li id="listhover"><a href="/">Suporte</a></li>
+      <li id="listhover"><a href="/">Blog</a></li>
+
+      <button class="b-acess-client" id="buttonhover-mobile">
+        <span>Entrar</span> <box-icon name='user' ></box-icon>
+      </button>
+
+    </ul>
+
+    <button class="b-acess-client">
       <span>Entrar</span> <box-icon name='user' ></box-icon>
     </button>
 
-    <span class="spanlineheader">I</span>
-
-    <div class="carrinhodecompras">
+    <div class="carrinhodecompras" id="carrinhomobile1">
       <box-icon class="cart-icon" name='cart'cl></box-icon>
     </div>
+
+
+  </nav>
+
+  <span class="spanlineheader">I</span>
+
+  <div class="carrinhodecompras">
+    <box-icon class="cart-icon" name='cart'cl></box-icon>
+  </div>
+
   </header>
 </section>
 
@@ -126,5 +148,10 @@
 <!-- SCRIPT MODELOS CELULARES -->
 <script src="./js/scriptmodels.js"></script>
 <!-- SCRIPT MODELOS CELULARES -->
+
+<!-- SCRIPTMENUMOBILE -->
+
+<script src="./js/menumobile.js"></script>
+<!-- MENUMOBILE -->
 
 </html>
