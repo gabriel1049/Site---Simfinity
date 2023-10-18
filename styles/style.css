@@ -313,6 +313,107 @@ a:hover {
 }
 
 
+.infoschip {
+  display: flex;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  margin: 0px;
+  background-color: #fff;
+  height: 150px;
+}
+
+.container_infochip {
+  display: flex;
+  align-items: center;
+  margin: 0px 160px;
+  width: 100%;
+  gap: 60px;
+}
+
+.infocobertura {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.infocobertura > h1 {
+  font-size: 80px;
+  color: var(--color-black-pantone);
+}
+
+.infocobertura > p {
+  font-size: 30px;
+  font-weight: 500;
+  margin-top: -10px;
+  color: var(--color-blue-escuro);
+}
+
+.infocobertura > p > span {
+  color: var(--color-black-pantone);
+  font-weight: 700;
+}
+
+.spaninfo {
+  color: var(--color-blue-escuro);
+  font-size: 90px;  
+}
+
+.informationproduct {
+  margin: 130px 160px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.infofisicoevirtual,
+.infomoedaconversao,
+.infosuportetecnico {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  width: 400px;
+  border-radius: 20px;
+  padding: 20px 20px;
+  color: #2d2d2f;
+}
+
+.iconinfo1 {
+  width: 50px;
+  height: 50px;
+  filter: #fff;
+}
+.imgrocket {
+  z-index: 1;
+}
+.imgrocket > img {
+  z-index: 1;
+  position: relative;
+  bottom: 140px;
+}
+.imgmundo {
+  z-index: 1;
+}
+.imgmundo > img {
+  z-index: 1;
+  position: absolute;
+  top: 650px;
+  right: 100px;
+}
+
+.article-destino {
+  width: 100%;
+  text-align: center;
+}
+
+.article-destino > h1 {
+  font-size: 50px;
+  font-weight: 500;
+  color: var(--color-black-pantone);
+}
+
 
 
 
