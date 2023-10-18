@@ -39,27 +39,81 @@ body{
   width: 100%;
 }
 
-.header {
+
+/* HEADER RESPONSIVO */
+
+#nav {
   width: 100%;
-  height: 70px;
-  display: flex;
-  background-color: #FFF;
-  z-index: 1;
-  justify-content: flex-start;
-  border-bottom: 2px solid #ececec;
-  align-items: center;
-}
-
-.logosimfinity {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  margin-left: 60px;
 }
 
-.logosimfinity > img {
+a {
+  color: var(--color-black-pantone);
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  transition: 0.7s;
+}
+
+#buttonhover-mobile{
+  display: none;
+}
+
+a:hover {
+  color: var(--color-blue-escuro);
+}
+
+#listhover {
+  border-bottom: 2px solid transparent;
+  transition: 0.7s;
+}
+
+#listhover:hover {
+  border-bottom: 2px solid var(--color-blue-escuro);
+}
+
+
+
+#logo {
   width: 200px;
   height: 200px;
+  margin-left: 160px;
 }
+
+#header {
+  box-sizing: border-box;
+  height: 70px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background: #fff;
+}
+
+#menu {
+  display: flex;
+  list-style: none;
+  gap: 0.5rem;
+}
+
+
+
+#menu a {
+  display: block;
+  padding: 0.5rem;
+}
+
+#btn-mobile {
+  display: none;
+}
+
+
+/* HEADER RESPONSIVO */
+
 
 
 /* BUTTON ACESS CLIENT */
@@ -84,9 +138,6 @@ body{
 .b-acess-client:hover {
   background-color: #e6e6e6;
 }
-
-
-
 
 
 .carrinhodecompras {
@@ -138,43 +189,6 @@ body{
 }
 
 /* ANUNCIO SUPORTE TÉCNICO */
-
-/* NAV-BAR */
-.navbar {
-  display: flex;
-  align-items: center;
-  margin: 0px 160px;
-  gap: 50px;
-}
-
-.navbar > .ul-header {
-  display: flex;
-  gap: 20px;
-}
-
-.navbar > .ul-header > li {
-  list-style: none;
-  padding: 20px 10px;
-  margin: 20px 10px;
-  border-bottom: 3px solid transparent;
-  transition: 0.8s;
-}
-
-.navbar > .ul-header > li > a {
-  text-decoration: none;
-  font-size: 17px;
-  font-weight: 400;
-  color: var(--color-black-pantone);
-  transition: 0.7s;
-}
-
-.navbar > .ul-header > li:hover {
-  border-bottom: 3px solid var(--color-blue-escuro);
-}
-
-.navbar > .ul-header > li > a:hover {
-  color: var(--color-blue-escuro);
-}
 
 /* NAV-BAR */
 
@@ -288,3 +302,149 @@ body{
 /* INPUT SEARCH */
 
 /* Section principal header */
+
+
+
+#logomobile {
+  display: none;
+}
+#carrinhomobile1 {
+  display: none;
+}
+
+
+
+
+
+/* MENUMOBILE */
+
+@media (max-width: 1000px) {
+
+  #texticonsuporte > h1 {
+    font-size: 12px;
+  }
+
+  #texticonsuporte > p {
+    font-size: 12px;
+  }
+
+  #header {
+    display: flex;
+    align-items: center;
+    margin: 0px;
+    width: 100%;
+    padding: 0;
+  }
+
+  #nav {
+    justify-content: space-between;
+    width: 100%;
+    margin: 0px;
+    align-items: center;
+    height: 100%;
+  }
+
+  #carrinhomobile1 {
+    display: flex;
+    margin: 0px;
+  }
+
+  .carrinhodecompras {
+    display: none;
+  }
+
+  #logodesktop {
+    display: none;
+  }
+
+  #logomobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+
+  .spanlineheader {
+    display: none;
+  }
+
+  .b-acess-client {
+    display: none;
+  }
+
+  #buttonhover-mobile {
+    display: flex;
+    margin: 0 1rem;
+  }
+
+  .principalsection{
+    display: none;
+  }
+
+  #logo {
+      margin-left: 0px;
+  }
+
+  #header{
+      justify-content: space-between;
+      gap: 0px;
+  }
+
+#menu {
+  display: block;
+  position: absolute;
+  width: 100%;
+  top: 90px;
+  right: 0px;
+  background: #fff;
+  transition: 0.6s;
+  z-index: 1000;
+  height: 0px;
+  visibility: hidden;
+  overflow-y: hidden;
+}
+#nav.active #menu {
+  height: calc(100vh - 70px);
+  visibility: visible;
+  overflow-y: auto;
+}
+#menu a {
+  padding: 1rem 0;
+  margin: 0 1rem;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+}
+#btn-mobile {
+  display: flex;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+  gap: 0.5rem;
+}
+#hamburger {
+  border-top: 2px solid;
+  width: 20px;
+}
+#hamburger::after,
+#hamburger::before {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: currentColor;
+  margin-top: 5px;
+  transition: 0.3s;
+  position: relative;
+}
+#nav.active #hamburger {
+  border-top-color: transparent;
+}
+#nav.active #hamburger::before {
+  transform: rotate(135deg);
+}
+#nav.active #hamburger::after {
+  transform: rotate(-135deg);
+  top: -7px;
+}
+}
