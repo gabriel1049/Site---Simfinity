@@ -37,6 +37,11 @@ body{
 
 .headersection {
   width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: #ffffff; /* Define a cor de fundo desejada */
+  z-index: 100; /* Define um valor de z-index para garantir que o cabeçalho fique em cima de outros elementos */
+  /* Adicione outras propriedades de estilo, como altura, margem, preenchimento, etc., conforme necessário */
 }
 
 
@@ -81,7 +86,7 @@ a:hover {
 #logo {
   width: 200px;
   height: 200px;
-  margin-left: 160px;
+  margin-left: 200px;
 }
 
 #header {
@@ -142,6 +147,7 @@ a:hover {
 
 .carrinhodecompras {
   margin: 20px 10px;
+  margin-right: 200px;
   height: 40px;
   width: 80px;
   display: flex;
@@ -198,12 +204,12 @@ a:hover {
   align-items: center;
   background-image: url("../assets/imagens/background/backgroundgradient.svg");
   background-size: cover;
-  margin-top: 40px;
+  margin-top: 90px;
 }
 
 .grid_principalsection {
-  margin-left: 160px;
-  margin-right: 160px;
+  margin-left: 200px;
+  margin-right: 200px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -211,19 +217,19 @@ a:hover {
 }
 
 .grid_text_principal > .p-chipinternacional {
-  font-size: 20px;
+  font-size: 15px;
   color: var(--color-black-pantone);
   font-weight: 500px;
 }
 
 .grid_text_principal > h1 {
-  font-size: 60px;
+  font-size: 50px;
   color: var(--color-black-pantone);
   font-weight: 400;
 }
 
 .grid_text_principal > .p-infos {
-  font-size: 25px;
+  font-size: 20px;
   color: var(--color-black-pantone);
   font-weight: 400;
   margin-top: 30px;
@@ -231,8 +237,8 @@ a:hover {
 
 /* GRID RIGHT */
 .div-gridright > img {
-  width: 600px;
-  height: 600px;
+  width: 500px;
+  height: 500px;
 }
 /* GRID RIGHT */
 
@@ -241,6 +247,7 @@ a:hover {
   margin-top: 50px;
   padding: 0px 30px;
   display: flex;
+  width: 900px;
   align-items: start;
   justify-content: center;
   flex-direction: column;
@@ -326,7 +333,7 @@ a:hover {
 .container_infochip {
   display: flex;
   align-items: center;
-  margin: 0px 160px;
+  margin: 0px 200px;
   width: 100%;
   gap: 60px;
 }
@@ -338,12 +345,12 @@ a:hover {
 }
 
 .infocobertura > h1 {
-  font-size: 80px;
+  font-size: 60px;
   color: var(--color-black-pantone);
 }
 
 .infocobertura > p {
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 500;
   margin-top: -10px;
   color: var(--color-blue-escuro);
@@ -360,7 +367,7 @@ a:hover {
 }
 
 .informationproduct {
-  margin: 130px 160px;
+  margin: 130px 200px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -391,7 +398,9 @@ a:hover {
 .imgrocket > img {
   z-index: 1;
   position: relative;
-  bottom: 140px;
+  bottom: 190px;
+  width: 300px;
+  height: 300px;
 }
 .imgmundo {
   z-index: 1;
@@ -400,7 +409,9 @@ a:hover {
   z-index: 1;
   position: absolute;
   top: 650px;
-  right: 100px;
+  right: 30px;
+  width: 350px;
+  height: 350px;
 }
 
 .article-destino {
@@ -463,6 +474,8 @@ a:hover {
     align-items: center;
     justify-content: center;
     height: 100%;
+    width: 100%;
+    margin: 0px;
   }
 
   .spanlineheader {
