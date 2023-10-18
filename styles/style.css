@@ -318,7 +318,15 @@ a:hover {
 
 /* MENUMOBILE */
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
+
+  #texticonsuporte > h1 {
+    font-size: 12px;
+  }
+
+  #texticonsuporte > p {
+    font-size: 12px;
+  }
 
   #header {
     display: flex;
