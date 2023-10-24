@@ -496,6 +496,69 @@ a:hover {
   background-color: var(--color-red-pantone);
 }
 
+
+
+.gridpaises {
+  display: none;
+}
+
+.grid-planoestadosunidos {
+  display: flex;  
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  padding: 10px 200px;
+  height: 700px;
+  margin-top: -250px;
+}
+
+.imagem_pais_usa {
+  width: 600px;
+  height: 300px;
+}
+.imagem_pais_usa > img {
+  width: 600px;
+  height: 400px;
+  border-radius: 20px;
+}
+
+.article_text_usa {
+  display: flex;
+  flex-direction: column;
+}
+.article_text_usa > h1 {
+  font-size: 40px;
+  color: #2d2d2f;
+  font-weight: 400;
+}
+
+.article_text_usa > p {
+  font-size: 20px;
+  color: #2d2d2f;
+  font-weight: 300;
+}
+.boxopcoes-usa {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.boxdays {
+  padding: 20px;
+  display: flex;
+  border-radius: 15px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  gap: 10px;
+  background-color: #e6e6e6;
+}
+
+
 /* MENUMOBILE */
 
 @media (max-width: 1000px) {
