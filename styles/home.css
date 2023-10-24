@@ -1,0 +1,340 @@
+:root {
+  --color-background: #fff;
+  --color-black-pantone: #2d2d2f;
+  --color-red-pantone: #2e3177;
+  --color-blue-header: #bdefff;
+  --color-gradient-blue: linear-gradient(
+    90deg,
+    rgba(71, 61, 125, 1) 12%,
+    rgba(36, 0, 181, 1) 55%,
+    rgba(91, 56, 232, 1) 76%
+  );
+  --color-blue-escuro: #2b8bec;
+  --color-alternative: #22176e;
+}
+
+.span_home1 {
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  font-size: 60px;
+  color: var(--color-alternative);
+}
+
+
+.top_section_home {
+  background-image: url('../assets/imagens/background/backgroundprincipal.svg');
+  width: 100%;
+  height: 1000px;
+  gap: 0px;
+  padding-left: 320px;
+  padding-right: 320px;
+  background-size: cover;
+}
+
+.top_subsection_home {
+
+  height: 600px;
+  border-radius: 35px;
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.top_section_text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 400px;
+}
+
+.top_section_text > h1 {
+  font-size: 60px;
+  color: var(--color-background);
+  font-weight: 500;
+}
+
+.mockupsimfinitiyv1 {
+  width: 500px;
+  height: 500px;
+}
+
+
+/* CARD ESTADOS UNIDOS */
+
+.card_estadosunidos {
+  border-radius: 25px;
+  width: 300px;
+  height: 550px;
+  background-color: var(--color-background);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 20px;
+  align-items: center;
+}
+.text_card_estadosunidos_h1 {
+  display: flex;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../assets/imagens/background/backgroundcardusa.svg');
+  background-size: cover;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  height: 150px;
+}
+.text_card_estadosunidos_h1 > h1 {
+  color: var(--color-background);
+  font-weight: bold;
+}
+.ul_card_estadosunidos {
+  width: 100%;
+  padding: 10px 20px;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.ul_card_estadosunidos > li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.buttons_card_estadosunidos {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px 20px;
+  gap: 15px;
+}
+
+.button_infos_estadosunidos {
+  border: 0px;
+  background-color: var(--color-blue-escuro);
+  font-size: 17px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  color: var(--color-background);
+  transition: 0.8s;
+}
+
+.button_infos_estadosunidos:hover {
+  transform: scale(1.05);
+}
+
+.button_comprar_estadosunidos {
+  border: 0px;
+  background-color: var(--color-blue-escuro);
+  font-size: 17px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  color: var(--color-background);
+  transition: 0.8s;
+}
+.button_comprar_estadosunidos:hover {
+  transform: scale(1.05);
+  background-color: #00FF3F;
+  color: var(--color-black-pantone);
+}
+
+/* CARD ESTADOS UNIDOS */
+
+
+
+
+/* CARD EUROPA */
+
+.card_europa {
+  border-radius: 25px;
+  width: 300px;
+  height: 550px;
+  background-color: var(--color-background);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 20px;
+  align-items: center;
+}
+.text_card_europa_h1 {
+  display: flex;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../assets/imagens/background/backgroundcardusa.svg');
+  background-size: cover;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  height: 150px;
+}
+.text_card_europa_h1 > h1 {
+  color: var(--color-background);
+  font-weight: bold;
+}
+.ul_card_europa {
+  width: 100%;
+  padding: 10px 20px;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.ul_card_europa > li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.buttons_card_europa {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px 20px;
+  gap: 15px;
+}
+
+.button_infos_europa {
+  border: 0px;
+  background-color: var(--color-blue-escuro);
+  font-size: 17px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  color: var(--color-background);
+  transition: 0.8s;
+}
+
+.button_infos_europa:hover {
+  transform: scale(1.05);
+}
+
+.button_comprar_europa {
+  border: 0px;
+  background-color: var(--color-blue-escuro);
+  font-size: 17px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  color: var(--color-background);
+  transition: 0.8s;
+}
+.button_comprar_europa:hover {
+  transform: scale(1.05);
+  background-color: #00FF3F;
+  color: var(--color-black-pantone);
+}
+
+/* CARD EUROPA */
+
+
+/* CARD MUNDIAL */
+
+.card_mundial {
+  border-radius: 25px;
+  width: 300px;
+  height: 550px;
+  background-color: var(--color-background);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 20px;
+  align-items: center;
+}
+.text_card_mundial_h1 {
+  display: flex;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../assets/imagens/background/backgroundcardusa.svg');
+  background-size: cover;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  height: 150px;
+}
+.text_card_mundial_h1 > h1 {
+  color: var(--color-background);
+  font-weight: bold;
+}
+.ul_card_mundial {
+  width: 100%;
+  padding: 10px 20px;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.ul_card_mundial > li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.buttons_card_mundial {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px 20px;
+  gap: 15px;
+}
+
+.button_infos_mundial {
+  border: 0px;
+  background-color: var(--color-blue-escuro);
+  font-size: 17px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  color: var(--color-background);
+  transition: 0.8s;
+}
+
+.button_infos_mundial:hover {
+  transform: scale(1.05);
+}
+
+.button_comprar_mundial {
+  border: 0px;
+  background-color: var(--color-blue-escuro);
+  font-size: 17px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  color: var(--color-background);
+  transition: 0.8s;
+}
+.button_comprar_mundial:hover {
+  transform: scale(1.05);
+  background-color: #00FF3F;
+  color: var(--color-black-pantone);
+}
+
+/* CARD MUNDIAL */
