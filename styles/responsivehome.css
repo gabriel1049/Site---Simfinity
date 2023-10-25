@@ -1,1 +1,122 @@
-m 
+:root {
+  --color-background: #fff;
+  --color-black-pantone: #2d2d2f;
+  --color-red-pantone: #2e3177;
+  --color-blue-header: #bdefff;
+  --color-gradient-blue: linear-gradient(
+    90deg,
+    rgba(71, 61, 125, 1) 12%,
+    rgba(36, 0, 181, 1) 55%,
+    rgba(91, 56, 232, 1) 76%
+  );
+  --color-blue-escuro: #2b8bec;
+  --color-alternative: #22176e;
+}
+
+@media screen and (max-width: 900px) and (min-width: 380px) {
+  .top_section_home{
+    margin: 0px;
+    background-color: var(--color-blue-escuro);
+    background-image: none;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .top_subsection_home {
+    height: 1800px;
+    width: 100%;
+    margin: 0px;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .top_section_text > h1 {
+    font-size: 20px;
+    color: var(--color-background);
+    font-weight: 500;
+  }
+
+  .p-span {
+    font-size: 20px;
+    color: var(--color-background);
+    font-weight: 700;
+  }
+  
+  .span_home1 {
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    color: var(--color-alternative);
+  }
+
+  .card-all {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+  }
+
+  .cardimg_usa {
+    width: 250px;
+  }
+  .cardimg_europa {
+    width: 250px;
+  }
+  .cardimg_mundial {
+    width: 250px;
+  }
+  .section_cards_estadosunidos {
+    width: 100%;
+    padding: 0px;
+  }
+  .layout_section_click_estadosunidos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0px;
+
+  }
+
+  .img_layout_estadosunidos > img {
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+  }
+
+  .text_layout_estadosunidos > h1 {
+    font-size: 20px;
+    width: 100%;
+    max-width: 100px;
+  }
+
+  .text_layout_estadosunidos > p {
+    font-size: 20px;
+    width: 100%;
+    max-width: 100px;
+  }
+
+  .layout_estadosunidos_buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .ul_layout_section_estadosunidos {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .button-voltar {
+    margin: 10px 10px;
+  }
+  .div_options_setedias_price {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .div_options_setedias_price > p {
+    font-size: 10px;
+    font-weight: 500;
+  }
+  
+}

@@ -67,10 +67,7 @@
   font-weight: 500;
 }
 
-.mockupsimfinitiyv1 {
-  width: 500px;
-  height: 500px;
-}
+
 
 
 .cardimg_usa {
@@ -135,7 +132,10 @@
 }
 
 .card-all {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 60px;
+  justify-content: space-between;
   animation: layouot 1s ease 0s 1 normal forwards;
 }
 
@@ -155,6 +155,10 @@
   display: none;
   flex-direction: column;
   animation: layouot 1s ease 0s 1 normal forwards;
+}
+.section_cards_estadosunidos {
+  width: 100%;
+  padding: 10px 20px;
 }
 
 @keyframes layouot {
@@ -184,6 +188,7 @@
 .layout_section_click_estadosunidos {
   display: flex;
   gap: 20px;
+  width: 100%;
 }
 
 .text_layout_estadosunidos {
@@ -277,6 +282,132 @@
   transition: 0.8s;
   animation: layouot 1s ease 0s 1 normal forwards;
 }
+
+.button-voltar-list {
+  display: none;
+  margin: 10px 500px;
+  padding: 20px 30px;
+  cursor: pointer;
+  padding: 20px 20px;
+  border: 0px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 10px;
+  background-color: #00abff;
+  color: var(--color-background);
+  transition: 0.8s;
+}
+
+
+
+
+/* OPÇÕES DE COMPRA 7 DIAS USA */
+
+.list_options_setedias_usa {
+  text-align: center;
+  display: none;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  animation: layouot 1s ease 0s 1 normal forwards;
+}
+
+.list_options_dezdias_usa {
+  text-align: center;
+  display: none;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  animation: layouot 1s ease 0s 1 normal forwards;
+}
+.list_options_dozedias_usa {
+  text-align: center;
+  display: none;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  animation: layouot 1s ease 0s 1 normal forwards;
+}
+.list_options_quinzedias_usa {
+  text-align: center;
+  display: none;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  animation: layouot 1s ease 0s 1 normal forwards;
+}
+.list_options_vintedias_usa {
+  text-align: center;
+  display: none;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  animation: layouot 1s ease 0s 1 normal forwards;
+}
+
+.list_options_trintadias_usa {
+  text-align: center;
+  display: none;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  animation: layouot 1s ease 0s 1 normal forwards;
+}
+
+
+.div_options_setedias_price {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.div_options_setedias_price > .name_setedias_name {
+  font-weight: 600;
+  font-size: 20px;
+  align-items: center;
+}
+
+.price_setedias {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.spansetedias {
+  font-weight: 600px;
+  font-size: 20px;
+}
+
+.quantidade_7dias {
+  font-size: 20px;
+}
+
+.add_cart_setedias {
+  padding: 10px 10px;
+  font-size: 15px;
+  border: 0px;
+  background-color: var(--color-blue-escuro);
+  color: var(--color-background);
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* CARD ESTADOS UNIDOS */
