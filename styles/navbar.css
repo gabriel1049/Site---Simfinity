@@ -223,11 +223,12 @@ a:hover {
 
   .b-acess-client {
     display: none;
+    margin: 0px;
   }
 
   #buttonhover-mobile {
     display: flex;
-    margin: 0 1rem;
+    margin: 0px;
   }
 
   .principalsection {
