@@ -23,10 +23,7 @@
   /* Adicione outros estilos desejados, como altura, sombra, etc. */
 }
 
-/* Define a altura do cabeçalho para acomodar seu conteúdo */
-.headersection {
-  height: 80px; /* Ajuste a altura conforme necessário */
-}
+
 
 /* Estilos adicionais para os elementos dentro do cabeçalho, se necessário */
 #nav {
@@ -49,6 +46,9 @@
   color: var(--color-alternative);
 }
 
+#logo {
+  cursor: pointer;
+}
 
 .top_section_home {
   background-image: url('../assets/imagens/background/backgroundgradient.svg');
@@ -58,6 +58,7 @@
   padding-left: 320px;
   padding-right: 320px;
   background-size: cover;
+  margin-top: 50px;
 }
 
 .top_subsection_home {
