@@ -58,12 +58,15 @@
 
   .cardimg_usa {
     width: 250px;
+    background-size: cover;
   }
   .cardimg_europa {
     width: 250px;
+    background-size: cover;
   }
   .cardimg_mundial {
     width: 250px;
+    background-size: cover;
   }
   .section_cards_estadosunidos {
     width: 100%;
