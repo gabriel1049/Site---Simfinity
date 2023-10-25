@@ -178,8 +178,9 @@
   text-align: center;
   font-size: 30px;
   margin-bottom: 10px;
-  color: var(--color-black-pantone);
+  color: var(--color-blue-escuro);
 }
+
 .layout_section_click_estadosunidos {
   display: flex;
   gap: 20px;
@@ -195,6 +196,7 @@
 .text_layout_estadosunidos > h1 {
   font-size: 20px;
   font-weight: 500;
+  color: var(--color-blue-escuro);
 }
 
 .ul_layout_section_estadosunidos {
