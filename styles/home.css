@@ -13,6 +13,29 @@
   --color-alternative: #22176e;
 }
 
+.headersection {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff; /* Defina a cor de fundo desejada */
+  z-index: 100; /* Garante que o cabeçalho fique acima de outros elementos */
+  /* Adicione outros estilos desejados, como altura, sombra, etc. */
+}
+
+/* Define a altura do cabeçalho para acomodar seu conteúdo */
+.headersection {
+  height: 80px; /* Ajuste a altura conforme necessário */
+}
+
+/* Estilos adicionais para os elementos dentro do cabeçalho, se necessário */
+#nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px; /* Ajuste o preenchimento conforme necessário */
+}
+
 .p-span {
   font-size: 30px;
   color: var(--color-background);
