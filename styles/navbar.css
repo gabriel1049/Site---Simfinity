@@ -148,7 +148,8 @@ a:hover {
   height: 30px;
   justify-content: center;
   align-items: center;
-  background-color: #00B0FF;
+  background: rgb(145,0,255);
+  background: linear-gradient(90deg, rgba(145,0,255,1) 0%, rgba(14,64,198,1) 100%);
   gap: 10px;
 }
 
