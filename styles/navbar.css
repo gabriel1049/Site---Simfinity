@@ -10,11 +10,15 @@
     rgba(91, 56, 232, 1) 76%
   );
   --color-blue-escuro: #2b8bec;
-
+  --color-alternative: #22176e;
 
   --color-orange: #ff9a3e;
   --color-blue-palet: #0089e4;
   --color-blackblue: #083D74;
+
+  --color-glow-roxo: #9437F0;
+
+  --color-gradient-roxo: linear-gradient(90deg, rgba(0,176,255,1) 0%, rgba(148,55,240,1) 100%);
 }
 
 
@@ -144,7 +148,7 @@ a:hover {
   height: 30px;
   justify-content: center;
   align-items: center;
-  background-color: var(--color-blackblue);
+  background-color: #00B0FF;
   gap: 10px;
 }
 
