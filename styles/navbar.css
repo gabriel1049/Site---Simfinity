@@ -10,6 +10,11 @@
     rgba(91, 56, 232, 1) 76%
   );
   --color-blue-escuro: #2b8bec;
+
+
+  --color-orange: #ff9a3e;
+  --color-blue-palet: #0089e4;
+  --color-blackblue: #083D74;
 }
 
 
@@ -139,7 +144,7 @@ a:hover {
   height: 30px;
   justify-content: center;
   align-items: center;
-  background-color: var(--color-blue-escuro);
+  background-color: var(--color-blackblue);
   gap: 10px;
 }
 

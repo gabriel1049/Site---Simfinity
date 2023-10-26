@@ -9,6 +9,8 @@ let btnVoltar;
 
 let textLayout;
 
+let ulListUsa;
+
 function start() {
   cardUsa = $("#card-imagem-usa");
   cardEuropa = $("#card-imagem-europa");
@@ -17,6 +19,8 @@ function start() {
   cardGlobal = $("#card-global");
   textLayout = $("#text-layout");
   btnVoltar = $('#btn-voltar');
+
+  ulListUsa = $('#ul-list-usa');
 
   cardUsa.click(() => {
     sectionCardUsa.show();
@@ -47,9 +51,11 @@ function listOptions(id) {
   let opcao = $(`#opcao${id}`);
 
   textLayout.hide();
+  ulListUsa.hide();
   opcao.show();
   btnVoltar.off("click").on("click", () => {
     textLayout.show();
+    ulListUsa.show();
     opcao.hide();
     padrao();
   });

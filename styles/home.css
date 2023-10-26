@@ -11,6 +11,10 @@
   );
   --color-blue-escuro: #2b8bec;
   --color-alternative: #22176e;
+
+  --color-orange: #ff9a3e;
+  --color-blue-palet: #0089e4;
+  --color-blackblue: #083D74;
 }
 
 .headersection {
@@ -43,7 +47,7 @@
   font-weight: 700;
   font-family: "Poppins", sans-serif;
   font-size: 60px;
-  color: var(--color-alternative);
+  color: var(--color-orange);
 }
 
 #logo {
@@ -51,9 +55,9 @@
 }
 
 .top_section_home {
-  background-image: url('../assets/imagens/background/backgroundgradient.svg');
+  background-image: url('../assets/imagens/background/backgroundgradient3.svg');
   width: 100%;
-  height: 800px;
+  height: 850px;
   gap: 0px;
   padding-left: 320px;
   padding-right: 320px;
@@ -62,17 +66,14 @@
 }
 
 .top_subsection_home {
-  background-color: var(--color-background);
-  height: 600px;
+  height: 450px;
   border-radius: 35px;
-  z-index: 1;
   display: flex;
   padding: 10px 20px;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  margin-top: 140px;
-  border-bottom: 3px solid #00abff;
+  margin-top: 0px;
 }
 
 .top_section_text {
@@ -92,32 +93,75 @@
 }
 
 
+.texth1_usa {
+  background: rgb(67,71,140);
+  background: linear-gradient(90deg, rgba(67,71,140,1) 7%, rgba(59,0,168,1) 42%, rgba(28,141,255,1) 94%);
+  height: 90px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.h1_card_usa {
+  font-size: 20px;
+  font-weight: 400px;
+}
 
+.infos_card_usa {
+  background-color: #fff;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  height: 160px;
+}
 
+.infos_card_usa > h1 {
+  color: var(--color-black-pantone);
+  font-size: 20px;
+  font-weight: 400;
+}
+.price_dolar {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.ver_mais_card_usa {
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: 400;
+  font-size: 20px;
+  border: 0px;
+  background-color: var(--color-blackblue);
+  color: var(--color-background);
+  cursor: pointer;
+  margin-top: 20px;
+  transition: 0.8s;
+}
+.ver_mais_card_usa:hover {
+  background: var(--color-blue-escuro);
+  transform: scale(1.05);
+}
 .cardimg_usa {
   width: 300px;
-  height: 550px;
+  height: 250px;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   font-size: 25px;
   color: var(--color-background);
-  background-image: url('../assets/imagens/background/backgroundcardusa.svg');
   background-size: cover;
-  border-radius: 35px;
-  cursor: pointer;
+  border-radius: 25px;
   transition: 0.8s;
   box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+  justify-content: space-between;
 }
 
-.cardimg_usa:hover {
-  transform: scale(1.05);
-}
+
 
 .cardimg_europa {
   width: 300px;
-  height: 550px;
+  height: 250px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -126,18 +170,15 @@
   color: var(--color-background);
   background-image: url('../assets/imagens/background/backgroundespanhacard.svg');
   background-size: cover;
-  border-radius: 35px;
-  cursor: pointer;
+  border-radius: 25px;
   transition: 0.8s;
   box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
 }
-.cardimg_europa:hover {
-  transform: scale(1.05);
-}
+
 
 .cardimg_mundial {
   width: 300px;
-  height: 550px;
+  height: 250px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -146,14 +187,11 @@
   color: var(--color-background);
   background-image: url('../assets/imagens/background/backgroundmundicard.svg');
   background-size: cover;
-  border-radius: 35px;
-  cursor: pointer;
+  border-radius: 25px;
   transition: 0.8s;
   box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
 }
-.cardimg_mundial:hover {
-  transform: scale(1.05);
-}
+
 
 .card-all {
   display: grid;
@@ -182,7 +220,12 @@
 }
 .section_cards_estadosunidos {
   width: 100%;
+  border-radius: 20px;
   padding: 10px 20px;
+  background-color: var(--color-background);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @keyframes layouot {
@@ -198,13 +241,14 @@
 }
 
 .img_layout_estadosunidos > img {
-  width: 400px;
-  height: 400px;
+  width: 230px;
+  height: 230px;
   border-radius: 20px;
+  display: none;
 }
 .text_cards_section_estadosunidos {
   text-align: center;
-  font-size: 30px;
+  font-size: 20px;
   margin-bottom: 10px;
   color: var(--color-blue-escuro);
 }
@@ -213,6 +257,8 @@
   display: flex;
   gap: 20px;
   width: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
 .text_layout_estadosunidos {
@@ -222,10 +268,8 @@
   justify-content: center;
 }
 
-.text_layout_estadosunidos > h1 {
+.text_layout_estadosunidos > p {
   font-size: 20px;
-  font-weight: 500;
-  color: var(--color-blue-escuro);
 }
 
 .ul_layout_section_estadosunidos {
@@ -250,12 +294,12 @@
 .layout_estadosunidos_buttons {
   display: flex;
   justify-content: space-between;
-  gap: 20px;
+  gap: 15px;
   margin-top: 20px;
 }
 
 .button_usa {
-  padding: 20px 20px;
+  padding: 10px 20px;
   border: 0px;
   cursor: pointer;
   font-size: 20px;
@@ -266,33 +310,16 @@
   transition: 0.8s;
 }
 
-.button7diasusa:hover {
-  transform: scale(1.05);
-  background-color: var(--color-alternative);
-}
-.button10diasusa:hover {
-  transform: scale(1.05);
-  background-color: var(--color-alternative);
-}
-.button12diasusa:hover {
-  transform: scale(1.05);
-  background-color: var(--color-alternative);
-}
-.button15diasusa:hover {
-  transform: scale(1.05);
-  background-color: var(--color-alternative);
-}
-.button20diasusa:hover {
-  transform: scale(1.05);
-  background-color: var(--color-alternative);
-}
-.button30diasusa:hover {
-  transform: scale(1.05);
-  background-color: var(--color-alternative);
-}
 
+.button_div_btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
 .button-voltar {
-  margin: 10px 500px;
+  width: 200px;
   padding: 20px 30px;
   cursor: pointer;
   padding: 20px 20px;
@@ -307,21 +334,7 @@
   animation: layouot 1s ease 0s 1 normal forwards;
 }
 
-.button-voltar-list {
-  display: none;
-  margin: 10px 500px;
-  padding: 20px 30px;
-  cursor: pointer;
-  padding: 20px 20px;
-  border: 0px;
-  cursor: pointer;
-  font-size: 20px;
-  font-weight: 600;
-  border-radius: 10px;
-  background-color: #00abff;
-  color: var(--color-background);
-  transition: 0.8s;
-}
+
 
 
 
@@ -379,331 +392,99 @@
   animation: layouot 1s ease 0s 1 normal forwards;
 }
 
-
-.div_options_setedias_price {
+.grid_plans_options {
   display: flex;
-  justify-content: space-between;
-  margin-top: 30px;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
 }
 
-.div_options_setedias_price > .name_setedias_name {
+/* classes globais */
+.imgpadraoplans > img {
+  width: 150px;
+  height: 150px;
+}
+
+.add_carrinho_layout {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.p_add_carrinho {
+  font-size: 13px;
   font-weight: 600;
-  font-size: 20px;
-  align-items: center;
-}
-
-.price_setedias {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-}
-
-.spansetedias {
-  font-weight: 600px;
-  font-size: 20px;
-}
-
-.quantidade_7dias {
-  font-size: 20px;
-}
-
-.add_cart_setedias {
-  padding: 10px 10px;
-  font-size: 15px;
-  border: 0px;
   background-color: var(--color-blue-escuro);
+  padding: 2px 10px;
+  border-radius: 50px;
   color: var(--color-background);
+  cursor: pointer;
+  transition: 0.8s;
+}
+
+.p_remove_carrinho {
+  font-size: 13px;
+  font-weight: 600;
+  background-color: var(--color-blue-escuro);
+  padding: 2px 10px;
+  border-radius: 50px;
+  color: var(--color-background);
+  cursor: pointer;
+  transition: 0.8s;
+}
+
+.btn_add_carinho {
+  font-size: 18px;
+  color: var(--color-background);
+  background-color: var(--color-blue-escuro);
+  border: 0px;
+  padding: 5px 10px;
+  font-weight: 500;
   border-radius: 20px;
+  margin-top: 5px;
   cursor: pointer;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* CARD ESTADOS UNIDOS */
-
-/* .card_estadosunidos {
-  border-radius: 25px;
-  width: 300px;
-  height: 550px;
-  background-color: var(--color-background);
+.plano500mb {
+  background: rgb(241,241,241);
+  background: linear-gradient(90deg, rgba(241,241,241,1) 0%, rgba(244,244,244,1) 100%);
+  padding: 10px 20px;
+  border-radius: 20px;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  gap: 20px;
   align-items: center;
 }
-.text_card_estadosunidos_h1 {
-  display: flex;
-  width: 100%;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  background-image: url('../assets/imagens/background/backgroundcardusa.svg');
-  background-size: cover;
-  border-top-right-radius: 20px;
-  border-top-left-radius: 20px;
-  height: 150px;
-}
-.text_card_estadosunidos_h1 > h1 {
-  color: var(--color-background);
-  font-weight: bold;
-}
-.ul_card_estadosunidos {
-  width: 100%;
+
+.plano1gb {
+  background: rgb(241,241,241);
+  background: linear-gradient(90deg, rgba(241,241,241,1) 0%, rgba(244,244,244,1) 100%);
   padding: 10px 20px;
-  gap: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-.ul_card_estadosunidos > li {
-  list-style: none;
+  border-radius: 20px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: 15px;
-  font-weight: 600;
+
 }
 
-.buttons_card_estadosunidos {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
+.plano2gb {
+  background: rgb(241,241,241);
+  background: linear-gradient(90deg, rgba(241,241,241,1) 0%, rgba(244,244,244,1) 100%);
   padding: 10px 20px;
-  gap: 15px;
-}
-
-.button_infos_estadosunidos {
-  border: 0px;
-  background-color: var(--color-blue-escuro);
-  font-size: 17px;
-  padding: 10px 20px;
-  border-radius: 25px;
-  cursor: pointer;
-  font-family: "Poppins", sans-serif;
-  color: var(--color-background);
-  transition: 0.8s;
-}
-
-.button_infos_estadosunidos:hover {
-  transform: scale(1.05);
-}
-
-.button_comprar_estadosunidos {
-  border: 0px;
-  background-color: var(--color-blue-escuro);
-  font-size: 17px;
-  padding: 10px 20px;
-  border-radius: 25px;
-  cursor: pointer;
-  font-family: "Poppins", sans-serif;
-  color: var(--color-background);
-  transition: 0.8s;
-}
-.button_comprar_estadosunidos:hover {
-  transform: scale(1.05);
-  background-color: #00FF3F;
-  color: var(--color-black-pantone);
-} */
-
-/* CARD ESTADOS UNIDOS */
-
-
-
-
-/* CARD EUROPA */
-/* 
-.card_europa {
-  border-radius: 25px;
-  width: 300px;
-  height: 550px;
-  background-color: var(--color-background);
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  gap: 20px;
-  align-items: center;
-}
-.text_card_europa_h1 {
-  display: flex;
-  width: 100%;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  background-image: url('../assets/imagens/background/backgroundcardusa.svg');
-  background-size: cover;
-  border-top-right-radius: 20px;
-  border-top-left-radius: 20px;
-  height: 150px;
-}
-.text_card_europa_h1 > h1 {
-  color: var(--color-background);
-  font-weight: bold;
-}
-.ul_card_europa {
-  width: 100%;
-  padding: 10px 20px;
-  gap: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-.ul_card_europa > li {
-  list-style: none;
+  border-radius: 20px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: 15px;
-  font-weight: 600;
+
 }
 
-.buttons_card_europa {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  padding: 10px 20px;
-  gap: 15px;
+.info_quantidade_planos {
+  font-size: 13px;
 }
 
-.button_infos_europa {
-  border: 0px;
-  background-color: var(--color-blue-escuro);
-  font-size: 17px;
-  padding: 10px 20px;
-  border-radius: 25px;
-  cursor: pointer;
-  font-family: "Poppins", sans-serif;
-  color: var(--color-background);
-  transition: 0.8s;
+.container_infos_plano {
+  gap: 10px;
 }
 
-.button_infos_europa:hover {
-  transform: scale(1.05);
-}
-
-.button_comprar_europa {
-  border: 0px;
-  background-color: var(--color-blue-escuro);
-  font-size: 17px;
-  padding: 10px 20px;
-  border-radius: 25px;
-  cursor: pointer;
-  font-family: "Poppins", sans-serif;
-  color: var(--color-background);
-  transition: 0.8s;
-}
-.button_comprar_europa:hover {
-  transform: scale(1.05);
-  background-color: #00FF3F;
-  color: var(--color-black-pantone);
-} */
-
-/* CARD EUROPA */
 
 
-/* CARD MUNDIAL */
 
-/* .card_mundial {
-  border-radius: 25px;
-  width: 300px;
-  height: 550px;
-  background-color: var(--color-background);
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  gap: 20px;
-  align-items: center;
-}
-.text_card_mundial_h1 {
-  display: flex;
-  width: 100%;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  background-image: url('../assets/imagens/background/backgroundcardusa.svg');
-  background-size: cover;
-  border-top-right-radius: 20px;
-  border-top-left-radius: 20px;
-  height: 150px;
-}
-.text_card_mundial_h1 > h1 {
-  color: var(--color-background);
-  font-weight: bold;
-}
-.ul_card_mundial {
-  width: 100%;
-  padding: 10px 20px;
-  gap: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-.ul_card_mundial > li {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 15px;
-  font-weight: 600;
-}
-
-.buttons_card_mundial {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  padding: 10px 20px;
-  gap: 15px;
-}
-
-.button_infos_mundial {
-  border: 0px;
-  background-color: var(--color-blue-escuro);
-  font-size: 17px;
-  padding: 10px 20px;
-  border-radius: 25px;
-  cursor: pointer;
-  font-family: "Poppins", sans-serif;
-  color: var(--color-background);
-  transition: 0.8s;
-}
-
-.button_infos_mundial:hover {
-  transform: scale(1.05);
-}
-
-.button_comprar_mundial {
-  border: 0px;
-  background-color: var(--color-blue-escuro);
-  font-size: 17px;
-  padding: 10px 20px;
-  border-radius: 25px;
-  cursor: pointer;
-  font-family: "Poppins", sans-serif;
-  color: var(--color-background);
-  transition: 0.8s;
-}
-.button_comprar_mundial:hover {
-  transform: scale(1.05);
-  background-color: #00FF3F;
-  color: var(--color-black-pantone);
-}
- */
-/* CARD MUNDIAL */

@@ -1,449 +1,627 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" href="./assets/imagens/icones/favicon/favicon2.svg" type="image/x-icon">
+    <link
+      rel="icon"
+      href="./assets/imagens/icones/favicon/favicon2.svg"
+      type="image/x-icon"
+    />
 
-  <!-- GOOGLE FONTS -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
 
+    <!-- boxicons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
 
-  <!-- boxicons -->
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- TITULO DA PÁGINA -->
+    <title>simfinity</title>
 
-  <!-- TITULO DA PÁGINA -->
-  <title>simfinity</title>
+    <!-- LINK CSS -->
+    <link rel="stylesheet" href="./styles/global.css" />
+  </head>
 
-  <!-- LINK CSS -->
-  <link rel="stylesheet" href="./styles/global.css">
-  
-</head>
+  <body>
+    <!-- HEADER PRINCIPAL -->
 
-
-<body>
-
-  <!-- HEADER PRINCIPAL -->
-
-<section class="headersection">
-
-  <!-- NÚMERO DO WhatsApp -->
-  <div class="suporte-header" id="texticonsuporte">
-    <box-icon type='logo' name='whatsapp'></box-icon>
-    <h1>WhatsApp - 22/7</h1>
-    <p>+55 (11) 98734-1818</p>
-  </div>
-  <!-- NÚMERO DO WhatsApp -->
-
-
-
-  <header class="headermenu"  id="header">
-    <div class="divlogo" id="logodesktop">
-      <img src="./assets/imagens/header/logoheader.svg" alt=" LOGO Simfinity" id="logo" onclick="redirectToIndex()">
-    </div>
-
-    <nav id="nav">
-    <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
-      <span id="hamburger"></span>
-    </button>
-
-    <div class="divlogo" id="logomobile">
-      <img src="./assets/imagens/header/logoheader.svg" alt=" LOGO Simfinity" id="logo" onclick="redirectToIndex()">
-    </div>
-
-    <ul id="menu" role="menu">
-      <li id="listhover"><a href="/">Planos</a></li>
-      <li id="listhover"><a href="/">Sobre nós</a></li>
-      <li id="listhover"><a href="/">Suporte</a></li>
-      <li id="listhover"><a href="/">Como funciona</a></li>
-
-      <a href="./login/login.html">
-      <button class="b-acess-client" id="buttonhover-mobile">
-        <span>Entrar</span> <box-icon name='user' ></box-icon>
-      </button>
-      </a>
-
-    </ul>
-
-    <a href="./login/login.html">
-    <button class="b-acess-client">
-      <span>Entrar</span> <box-icon name='user' ></box-icon>
-    </button>
-    </a>
-
-    <div class="carrinhodecompras" id="carrinhomobile1">
-      <box-icon class="cart-icon" name='cart'cl></box-icon>
-    </div>
-
-
-  </nav>
-
-  <span class="spanlineheader">I</span>
-
-  <div class="carrinhodecompras">
-    <box-icon class="cart-icon" name='cart'cl></box-icon>
-  </div>
-
-  </header>
-</section>
-
-  <!-- Top Section -->
-  <section class="top_section_home">
-    <div class="top_section_text">
-      <h1>Fique Conectado durante suas <span class="span_home1">viagens internacionais</span></h1>
-      <p class="p-span">INTERNET ILIMITADA</p>
-    </div>
-    <div class="top_subsection_home">
-
-      <div class="card-all" id="card-global">
-        <div class="cardimg_usa" id="card-imagem-usa">
-          <h1>
-            Chip <br/>
-            Estados Unidos <br/>&<br/> Canadá
-          </h1>
-        </div>
-
-        <div class="cardimg_europa" id="card-imagem-europa">
-          <h1>
-            Chip <br/>
-            Europa
-          </h1>
-        </div>
-
-        <div class="cardimg_mundial" id="card-imagem-mundial">
-          <h1>
-            Chip <br/>
-            Mundial
-          </h1>
-        </div>
-    </div>
-
-      <div class="section_cards_estadosunidos" id="section-card-usa">
-        <h1 class="text_cards_section_estadosunidos">
-          Chip Estados Unidos & Canadá
-        </h1>
-
-        <div class="layout_section_click_estadosunidos">
-
-          <div class="img_layout_estadosunidos">
-            <img src="./assets/imagens/background/usa.jpg" alt=" Estados Unidos Layout ">
-          </div>
-
-          <div class="text_layout_estadosunidos section" id="text-layout">
-            <h1>Chip Internacional para sua viagem para os Estados Unidos ou Canadá</h1>
-
-            <p>Selecione a opção que for compativel com a quantidade de Dias da sua viagem</p>
-
-            <div class="layout_estadosunidos_buttons">
-              <button class="buttonsetediasusa button_usa" onclick="listOptions(7)">7 Dias</button>
-              <button class="buttondezdiasusa button_usa" onclick="listOptions(10)">10 Dias</button>
-              <button class="buttonsdozediasusa button_usa" onclick="listOptions(12)">12 Dias</button>
-              <button class="buttonquinzediasusa button_usa" onclick="listOptions(15)">15 Dias</button>
-              <button class="buttonvintediasusa button_usa" onclick="listOptions(20)">20 Dias</button>
-              <button class="buttontrintadiasusa button_usa" onclick="listOptions(30)">30 Dias</button>
-            </div>
-          </div>
-
-
-          <!-- 7 DIAS COMPRAR -->
-
-          <div class="list_options_setedias_usa list_options1" id="opcao7">
-            <h1>Melhores opções para sua viagem de até 7 dias</h1>
-            <div class="div_options_setedias_price">
-            <p class="name_setedias_name">USA/Canadá 7 Dias Ilimitado Data <br/>(500MB/Dia em alta velocidade)</p> 
-            <div class="price_setedias">
-            <span class="spansetedias">US$ 12.00</span>
-            <box-icon name='message-alt-add'></box-icon> 
-            <p class="quantidade_7dias">1</p> 
-            <box-icon name='message-alt-minus'></box-icon> 
-            <button class="add_cart_setedias"> Adicionar</button>
-              </div>
-            </div>
-
-            <div class="div_options_setedias_price">
-              <p class="name_setedias_name">USA/Canadá 7 Dias Ilimitado Data <br/>(1GB/Dia em alta velocidade)</p> 
-              <div class="price_setedias">
-              <span class="spansetedias">US$ 17.00</span>
-              <box-icon name='message-alt-add'></box-icon> 
-              <p class="quantidade_7dias">1</p> 
-              <box-icon name='message-alt-minus'></box-icon> 
-              <button class="add_cart_setedias"> Adicionar</button>
-                </div>
-              </div>
-
-              <div class="div_options_setedias_price">
-                <p class="name_setedias_name">USA/Canadá 7 Dias Ilimitado Data <br/>(2GB/Dia em alta velocidade)</p> 
-                <div class="price_setedias">
-                <span class="spansetedias">US$ 25.00</span>
-                <box-icon name='message-alt-add'></box-icon> 
-                <p class="quantidade_7dias">1</p> 
-                <box-icon name='message-alt-minus'></box-icon> 
-                <button class="add_cart_setedias"> Adicionar</button>
-                  </div>
-                </div>
-          </div>
-
-          <!-- 7 DIAS COMPRAR -->
-
-
-          <!-- 10 DIAS COMPRAR -->
-
-          <div class="list_options_dezdias_usa list_options1" id="opcao10">
-            <h1>Melhores opções para sua viagem de até 10 dias</h1>
-            <div class="div_options_setedias_price">
-            <p class="name_setedias_name">USA/Canadá 10 Dias Ilimitado Data <br/>(500MB/Dia em alta velocidade)</p> 
-            <div class="price_setedias">
-            <span class="spansetedias">US$ 12.00</span>
-            <box-icon name='message-alt-add'></box-icon> 
-            <p class="quantidade_7dias">1</p> 
-            <box-icon name='message-alt-minus'></box-icon> 
-            <button class="add_cart_setedias"> Adicionar</button>
-              </div>
-            </div>
-
-            <div class="div_options_setedias_price">
-              <p class="name_setedias_name">USA/Canadá 10 Dias Ilimitado Data <br/>(1GB/Dia em alta velocidade)</p> 
-              <div class="price_setedias">
-              <span class="spansetedias">US$ 17.00</span>
-              <box-icon name='message-alt-add'></box-icon> 
-              <p class="quantidade_7dias">1</p> 
-              <box-icon name='message-alt-minus'></box-icon> 
-              <button class="add_cart_setedias"> Adicionar</button>
-                </div>
-              </div>
-
-              <div class="div_options_setedias_price">
-                <p class="name_setedias_name">USA/Canadá 10 Dias Ilimitado Data <br/>(2GB/Dia em alta velocidade)</p> 
-                <div class="price_setedias">
-                <span class="spansetedias">US$ 25.00</span>
-                <box-icon name='message-alt-add'></box-icon> 
-                <p class="quantidade_7dias">1</p> 
-                <box-icon name='message-alt-minus'></box-icon> 
-                <button class="add_cart_setedias"> Adicionar</button>
-                  </div>
-                </div>
-          </div>
-
-          <!-- 10 DIAS COMPRAR -->
-
-          <!-- 12 DIAS COMPRAR -->
-
-          <div class="list_options_dozedias_usa list_options1" id="opcao12">
-           <h1>Melhores opções para sua viagem de até 12 dias</h1>
-                      <div class="div_options_setedias_price">
-                      <p class="name_setedias_name">USA/Canadá 12 Dias Ilimitado Data <br/>(500MB/Dia em alta velocidade)</p> 
-                      <div class="price_setedias">
-                      <span class="spansetedias">US$ 12.00</span>
-                      <box-icon name='message-alt-add'></box-icon> 
-                      <p class="quantidade_7dias">1</p> 
-                      <box-icon name='message-alt-minus'></box-icon> 
-                      <button class="add_cart_setedias"> Adicionar</button>
-                        </div>
-                      </div>
-          
-                      <div class="div_options_setedias_price">
-                        <p class="name_setedias_name">USA/Canadá 12 Dias Ilimitado Data <br/>(1GB/Dia em alta velocidade)</p> 
-                        <div class="price_setedias">
-                        <span class="spansetedias">US$ 17.00</span>
-                        <box-icon name='message-alt-add'></box-icon> 
-                        <p class="quantidade_7dias">1</p> 
-                        <box-icon name='message-alt-minus'></box-icon> 
-                        <button class="add_cart_setedias"> Adicionar</button>
-                          </div>
-                        </div>
-          
-                        <div class="div_options_setedias_price">
-                          <p class="name_setedias_name">USA/Canadá 12 Dias Ilimitado Data <br/>(2GB/Dia em alta velocidade)</p> 
-                          <div class="price_setedias">
-                          <span class="spansetedias">US$ 25.00</span>
-                          <box-icon name='message-alt-add'></box-icon> 
-                          <p class="quantidade_7dias">1</p> 
-                          <box-icon name='message-alt-minus'></box-icon> 
-                          <button class="add_cart_setedias"> Adicionar</button>
-                            </div>
-                          </div>
-                    </div>
-          
-                    <!-- 12 DIAS COMPRAR -->
-
-                  <!-- 15 DIAS COMPRAR -->
-
-                  <div class="list_options_dozedias_usa list_options1" id="opcao15">
-                    <h1>Melhores opções para sua viagem de até 15 dias</h1>
-                               <div class="div_options_setedias_price">
-                               <p class="name_setedias_name">USA/Canadá 15 Dias Ilimitado Data <br/>(500MB/Dia em alta velocidade)</p> 
-                               <div class="price_setedias">
-                               <span class="spansetedias">US$ 12.00</span>
-                               <box-icon name='message-alt-add'></box-icon> 
-                               <p class="quantidade_7dias">1</p> 
-                               <box-icon name='message-alt-minus'></box-icon> 
-                               <button class="add_cart_setedias"> Adicionar</button>
-                                 </div>
-                               </div>
-                   
-                               <div class="div_options_setedias_price">
-                                 <p class="name_setedias_name">USA/Canadá 15 Dias Ilimitado Data <br/>(1GB/Dia em alta velocidade)</p> 
-                                 <div class="price_setedias">
-                                 <span class="spansetedias">US$ 17.00</span>
-                                 <box-icon name='message-alt-add'></box-icon> 
-                                 <p class="quantidade_7dias">1</p> 
-                                 <box-icon name='message-alt-minus'></box-icon> 
-                                 <button class="add_cart_setedias"> Adicionar</button>
-                                   </div>
-                                 </div>
-                   
-                                 <div class="div_options_setedias_price">
-                                   <p class="name_setedias_name">USA/Canadá 15 Dias Ilimitado Data <br/>(2GB/Dia em alta velocidade)</p> 
-                                   <div class="price_setedias">
-                                   <span class="spansetedias">US$ 25.00</span>
-                                   <box-icon name='message-alt-add'></box-icon> 
-                                   <p class="quantidade_7dias">1</p> 
-                                   <box-icon name='message-alt-minus'></box-icon> 
-                                   <button class="add_cart_setedias"> Adicionar</button>
-                                     </div>
-                                   </div>
-                             </div>
-                   
-                             <!-- 15 DIAS COMPRAR -->
-
-                          <!-- 15 DIAS COMPRAR -->
-
-                          <div class="list_options_vintedias_usa list_options1" id="opcao20">
-                            <h1>Melhores opções para sua viagem de até 20 dias</h1>
-                                       <div class="div_options_setedias_price">
-                                       <p class="name_setedias_name">USA/Canadá 20 Dias Ilimitado Data <br/>(500MB/Dia em alta velocidade)</p> 
-                                       <div class="price_setedias">
-                                       <span class="spansetedias">US$ 12.00</span>
-                                       <box-icon name='message-alt-add'></box-icon> 
-                                       <p class="quantidade_7dias">1</p> 
-                                       <box-icon name='message-alt-minus'></box-icon> 
-                                       <button class="add_cart_setedias"> Adicionar</button>
-                                         </div>
-                                       </div>
-                           
-                                       <div class="div_options_setedias_price">
-                                         <p class="name_setedias_name">USA/Canadá 20 Dias Ilimitado Data <br/>(1GB/Dia em alta velocidade)</p> 
-                                         <div class="price_setedias">
-                                         <span class="spansetedias">US$ 17.00</span>
-                                         <box-icon name='message-alt-add'></box-icon> 
-                                         <p class="quantidade_7dias">1</p> 
-                                         <box-icon name='message-alt-minus'></box-icon> 
-                                         <button class="add_cart_setedias"> Adicionar</button>
-                                           </div>
-                                         </div>
-                           
-                                         <div class="div_options_setedias_price">
-                                           <p class="name_setedias_name">USA/Canadá 20 Dias Ilimitado Data <br/>(2GB/Dia em alta velocidade)</p> 
-                                           <div class="price_setedias">
-                                           <span class="spansetedias">US$ 25.00</span>
-                                           <box-icon name='message-alt-add'></box-icon> 
-                                           <p class="quantidade_7dias">1</p> 
-                                           <box-icon name='message-alt-minus'></box-icon> 
-                                           <button class="add_cart_setedias"> Adicionar</button>
-                                             </div>
-                                           </div>
-                                     </div>
-                           
-                                     <!-- 20 DIAS COMPRAR -->
-
-                          <!-- 30 DIAS COMPRAR -->
-
-                          <div class="list_options_trintadias_usa list_options1" id="opcao30">
-                            <h1>Melhores opções para sua viagem de até 30 dias</h1>
-                                       <div class="div_options_setedias_price">
-                                       <p class="name_setedias_name">USA/Canadá 30 Dias Ilimitado Data <br/>(500MB/Dia em alta velocidade)</p> 
-                                       <div class="price_setedias">
-                                       <span class="spansetedias">US$ 12.00</span>
-                                       <box-icon name='message-alt-add'></box-icon> 
-                                       <p class="quantidade_7dias">1</p> 
-                                       <box-icon name='message-alt-minus'></box-icon> 
-                                       <button class="add_cart_setedias"> Adicionar</button>
-                                         </div>
-                                       </div>
-                           
-                                       <div class="div_options_setedias_price">
-                                         <p class="name_setedias_name">USA/Canadá 30 Dias Ilimitado Data <br/>(1GB/Dia em alta velocidade)</p> 
-                                         <div class="price_setedias">
-                                         <span class="spansetedias">US$ 17.00</span>
-                                         <box-icon name='message-alt-add'></box-icon> 
-                                         <p class="quantidade_7dias">1</p> 
-                                         <box-icon name='message-alt-minus'></box-icon> 
-                                         <button class="add_cart_setedias"> Adicionar</button>
-                                           </div>
-                                         </div>
-                           
-                                         <div class="div_options_setedias_price">
-                                           <p class="name_setedias_name">USA/Canadá 30 Dias Ilimitado Data <br/>(2GB/Dia em alta velocidade)</p> 
-                                           <div class="price_setedias">
-                                           <span class="spansetedias">US$ 25.00</span>
-                                           <box-icon name='message-alt-add'></box-icon> 
-                                           <p class="quantidade_7dias">1</p> 
-                                           <box-icon name='message-alt-minus'></box-icon> 
-                                           <button class="add_cart_setedias"> Adicionar</button>
-                                             </div>
-                                           </div>
-                                     </div>
-                           
-                                     <!-- 30 DIAS COMPRAR -->
-
-          
-          
-
-
-
-        </div>
-
-        <ul class="ul_layout_section_estadosunidos">
-          <li><box-icon name='check-circle' type='solid' color='#00abff' ></box-icon>Tarifas em Reais</li>
-          <li><box-icon name='check-circle' type='solid' color='#00abff' ></box-icon>Internet ILIMITADA</li>
-          <li><box-icon name='check-circle' type='solid' color='#00abff' ></box-icon>Suporte Técnico - 24/7</li>
-          <li><box-icon name='check-circle' type='solid' color='#00abff' ></box-icon>Chip Físico ou Virtual</li>
-          <li><box-icon name='check-circle' type='solid' color='#00abff' ></box-icon>Envio para todo o Brasil</li>
-        </ul>
-
-        <button class="button-voltar" id="btn-voltar">Voltar</button>
-        
-        
-
+    <section class="headersection">
+      <!-- NÚMERO DO WhatsApp -->
+      <div class="suporte-header" id="texticonsuporte">
+        <box-icon type="logo" name="whatsapp" color="#fff"></box-icon>
+        <h1>WhatsApp - 22/7</h1>
+        <p>+55 (11) 98734-1818</p>
       </div>
+      <!-- NÚMERO DO WhatsApp -->
+
+      <header class="headermenu" id="header">
+        <div class="divlogo" id="logodesktop">
+          <img
+            src="./assets/imagens/header/logoheader.svg"
+            alt=" LOGO Simfinity"
+            id="logo"
+            onclick="redirectToIndex()"
+          />
+        </div>
+
+        <nav id="nav">
+          <button
+            aria-label="Abrir Menu"
+            id="btn-mobile"
+            aria-haspopup="true"
+            aria-controls="menu"
+            aria-expanded="false"
+          >
+            <span id="hamburger"></span>
+          </button>
+
+          <div class="divlogo" id="logomobile">
+            <img
+              src="./assets/imagens/header/logoheader.svg"
+              alt=" LOGO Simfinity "
+              id="logo"
+              onclick="redirectToIndex()"
+            />
+          </div>
+
+          <ul id="menu" role="menu">
+            <li id="listhover"><a href="/">Planos</a></li>
+            <li id="listhover"><a href="/">Sobre nós</a></li>
+            <li id="listhover"><a href="/">Suporte</a></li>
+            <li id="listhover"><a href="/">Como funciona</a></li>
+
+            <a href="./login/login.html">
+              <button class="b-acess-client" id="buttonhover-mobile">
+                <span>Entrar</span> <box-icon name="user"></box-icon>
+              </button>
+            </a>
+          </ul>
+
+          <a href="./login/login.html">
+            <button class="b-acess-client">
+              <span>Entrar</span> <box-icon name="user"></box-icon>
+            </button>
+          </a>
+
+          <div class="carrinhodecompras" id="carrinhomobile1">
+            <box-icon class="cart-icon" name="cart" cl></box-icon>
+          </div>
+        </nav>
+
+        <span class="spanlineheader">I</span>
+
+        <div class="carrinhodecompras">
+          <box-icon class="cart-icon" name="cart" cl></box-icon>
+        </div>
+      </header>
+    </section>
+
+    <!-- Top Section -->
+    <section class="top_section_home">
+      <div class="top_section_text">
+        <h1>
+          Fique Conectado durante suas
+          <span class="span_home1">viagens internacionais</span>
+        </h1>
+        <p class="p-span">INTERNET ILIMITADA</p>
+      </div>
+      <div class="top_subsection_home">
+        <div class="card-all" id="card-global">
+          <div class="cardimg_usa">
+            <div class="texth1_usa">
+              <h1 class="h1_card_usa">
+                Chip <br />
+                America do Norte
+              </h1>
+            </div>
+
+            <div class="infos_card_usa">
+              <h1>A partir de <br /><span class="price_dolar">U$15</span></h1>
+
+              <button class="ver_mais_card_usa" id="card-imagem-usa">
+                Ofertas
+              </button>
+            </div>
+          </div>
+
+          <div class="cardimg_europa" id="card-imagem-europa">
+            <div class="texth1_usa">
+              <h1 class="h1_card_usa">
+                Chip <br />
+                Europa
+              </h1>
+            </div>
+
+            <div class="infos_card_usa">
+              <h1>A partir de <br /><span class="price_dolar">U$15</span></h1>
+
+              <button class="ver_mais_card_usa" id="card-imagem-europa">
+                Ofertas
+              </button>
+            </div>
+          </div>
+
+          <div class="cardimg_mundial" id="card-imagem-mundial">
+            <div class="texth1_usa">
+              <h1 class="h1_card_usa">
+                Chip <br />
+                Mundial
+              </h1>
+            </div>
+
+            <div class="infos_card_usa">
+              <h1>A partir de <br /><span class="price_dolar">U$30</span></h1>
+
+              <button class="ver_mais_card_usa" id="card-imagem-mundial">
+                Ofertas
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="section_cards_estadosunidos" id="section-card-usa">
+          <h1 class="text_cards_section_estadosunidos">
+            Chip Estados Unidos & Canadá
+          </h1>
+
+          <div class="layout_section_click_estadosunidos">
+            <div class="text_layout_estadosunidos section" id="text-layout">
+              <p>
+                Selecione a opção que for compativel com a quantidade de Dias da
+                sua viagem
+              </p>
+
+              <div class="layout_estadosunidos_buttons">
+                <button
+                  class="buttonsetediasusa button_usa"
+                  onclick="listOptions(7)"
+                >
+                  7 Dias
+                </button>
+                <button
+                  class="buttondezdiasusa button_usa"
+                  onclick="listOptions(10)"
+                >
+                  10 Dias
+                </button>
+                <button
+                  class="buttonsdozediasusa button_usa"
+                  onclick="listOptions(12)"
+                >
+                  12 Dias
+                </button>
+                <button
+                  class="buttonquinzediasusa button_usa"
+                  onclick="listOptions(15)"
+                >
+                  15 Dias
+                </button>
+                <button
+                  class="buttonvintediasusa button_usa"
+                  onclick="listOptions(20)"
+                >
+                  20 Dias
+                </button>
+                <button
+                  class="buttontrintadiasusa button_usa"
+                  onclick="listOptions(30)"
+                >
+                  30 Dias
+                </button>
+              </div>
+            </div>
+
+            <!-- 7 DIAS COMPRAR -->
+
+            <div class="list_options_setedias_usa list_options1" id="opcao7">
+              <div class="grid_plans_options">
+                <div class="plano500mb">
+                  <div class="imgpadraoplans">
+                    <img
+                      src="./assets/imagens/planos/usa-7days.svg"
+                      alt=" 500MB PLANOS "
+                    />
+                  </div>
+
+                  <article class="container_infos_plano">
+                    <h1>500MB/Dia</h1>
+                    <p class="info_quantidade_planos">em Alta Velocidade</p>
+                    <h1 class="preco_plano">U$17.00</h1>
+
+                    <div class="add_carrinho_layout">
+                      <p class="p_add_carrinho">+</p>
+                      <h1 class="value_carrinho_quantidade">1</h1>
+                      <p class="p_remove_carrinho">-</p>
+                    </div>
+                    <button class="btn_add_carinho">Adicionar</button> 
+                    
+                  </article>
+
+                 
+
+
+                </div>
+
+                <div class="plano1gb">
+                  <div class="imgpadraoplans">
+                    <img
+                      src="./assets/imagens/planos/usa-7days.svg"
+                      alt=" 500MB PLANOS "
+                    />
+                  </div>
+
+                  <article class="container_infos_plano">
+                    <h1>1GB/Dia</h1>
+                    <p class="info_quantidade_planos">em Alta Velocidade</p>
+                    <h1 class="preco_plano">U$25.00</h1>
+
+                    <div class="add_carrinho_layout">
+                      <p class="p_add_carrinho">+</p>
+                      <h1 class="value_carrinho_quantidade">1</h1>
+                      <p class="p_remove_carrinho">-</p>
+                    </div>
+                    <button class="btn_add_carinho">Adicionar</button> 
+                  </article>
 
 
 
-    </div>
-  </section>
+                </div>
 
+                <div class="plano2gb">
+                  <div class="imgpadraoplans">
+                    <img
+                      src="./assets/imagens/planos/usa-7days.svg"
+                      alt=" 500MB PLANOS "
+                    />
+                  </div>
+
+                  <article class="container_infos_plano">
+                    <h1>2GB/Dia</h1>
+                    <p class="info_quantidade_planos">em Alta Velocidade</p>
+                    <h1 class="preco_plano">U$50.00</h1>
+
+                    <div class="add_carrinho_layout">
+                      <p class="p_add_carrinho">+</p>
+                      <h1 class="value_carrinho_quantidade">1</h1>
+                      <p class="p_remove_carrinho">-</p>
+                    </div>
+                    <button class="btn_add_carinho">Adicionar</button>
   
-</body>
+                  </article>
 
 
+                </div>
+              </div>
+            </div>
 
-<!-- SCRIPT BOX ICONS -->
-<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+            <!-- 7 DIAS COMPRAR -->
 
+            <!-- 10 DIAS COMPRAR -->
 
-<!-- SCRIPT MODELOS CELULARES -->
-<script src="./js/scriptmodels.js"></script>
-<!-- SCRIPT MODELOS CELULARES -->
+            <div class="list_options_dezdias_usa list_options1" id="opcao10">
+              <h1>Melhores opções para sua viagem de até 10 dias</h1>
+              <div class="div_options_setedias_price">
+                <p class="name_setedias_name">
+                  USA/Canadá 10 Dias Ilimitado Data <br />(500MB/Dia em alta
+                  velocidade)
+                </p>
+                <div class="price_setedias">
+                  <span class="spansetedias">US$ 12.00</span>
+                  <box-icon name="message-alt-add"></box-icon>
+                  <p class="quantidade_7dias">1</p>
+                  <box-icon name="message-alt-minus"></box-icon>
+                  <button class="add_cart_setedias">Adicionar</button>
+                </div>
+              </div>
 
-<!-- SCRIPTMENUMOBILE -->
+              <div class="div_options_setedias_price">
+                <p class="name_setedias_name">
+                  USA/Canadá 10 Dias Ilimitado Data <br />(1GB/Dia em alta
+                  velocidade)
+                </p>
+                <div class="price_setedias">
+                  <span class="spansetedias">US$ 17.00</span>
+                  <box-icon name="message-alt-add"></box-icon>
+                  <p class="quantidade_7dias">1</p>
+                  <box-icon name="message-alt-minus"></box-icon>
+                  <button class="add_cart_setedias">Adicionar</button>
+                </div>
+              </div>
 
-<script src="./js/menumobile.js"></script>
-<!-- MENUMOBILE -->
+              <div class="div_options_setedias_price">
+                <p class="name_setedias_name">
+                  USA/Canadá 10 Dias Ilimitado Data <br />(2GB/Dia em alta
+                  velocidade)
+                </p>
+                <div class="price_setedias">
+                  <span class="spansetedias">US$ 25.00</span>
+                  <box-icon name="message-alt-add"></box-icon>
+                  <p class="quantidade_7dias">1</p>
+                  <box-icon name="message-alt-minus"></box-icon>
+                  <button class="add_cart_setedias">Adicionar</button>
+                </div>
+              </div>
+            </div>
 
+            <!-- 10 DIAS COMPRAR -->
 
-<script src="./js/scriptcards.js"></script>
+            <!-- 12 DIAS COMPRAR -->
 
+            <div class="list_options_dozedias_usa list_options1" id="opcao12">
+              <h1>Melhores opções para sua viagem de até 12 dias</h1>
+              <div class="div_options_setedias_price">
+                <p class="name_setedias_name">
+                  USA/Canadá 12 Dias Ilimitado Data <br />(500MB/Dia em alta
+                  velocidade)
+                </p>
+                <div class="price_setedias">
+                  <span class="spansetedias">US$ 12.00</span>
+                  <box-icon name="message-alt-add"></box-icon>
+                  <p class="quantidade_7dias">1</p>
+                  <box-icon name="message-alt-minus"></box-icon>
+                  <button class="add_cart_setedias">Adicionar</button>
+                </div>
+              </div>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+              <div class="div_options_setedias_price">
+                <p class="name_setedias_name">
+                  USA/Canadá 12 Dias Ilimitado Data <br />(1GB/Dia em alta
+                  velocidade)
+                </p>
+                <div class="price_setedias">
+                  <span class="spansetedias">US$ 17.00</span>
+                  <box-icon name="message-alt-add"></box-icon>
+                  <p class="quantidade_7dias">1</p>
+                  <box-icon name="message-alt-minus"></box-icon>
+                  <button class="add_cart_setedias">Adicionar</button>
+                </div>
+              </div>
 
+              <div class="div_options_setedias_price">
+                <p class="name_setedias_name">
+                  USA/Canadá 12 Dias Ilimitado Data <br />(2GB/Dia em alta
+                  velocidade)
+                </p>
+                <div class="price_setedias">
+                  <span class="spansetedias">US$ 25.00</span>
+                  <box-icon name="message-alt-add"></box-icon>
+                  <p class="quantidade_7dias">1</p>
+                  <box-icon name="message-alt-minus"></box-icon>
+                  <button class="add_cart_setedias">Adicionar</button>
+                </div>
+              </div>
+            </div>
 
-<script>
-  $(() => { // document ready
-    start();
-})
-</script>
+            <!-- 12 DIAS COMPRAR -->
 
+            <!-- 15 DIAS COMPRAR -->
+
+            <div class="list_options_dozedias_usa list_options1" id="opcao15">
+              <h1>Melhores opções para sua viagem de até 15 dias</h1>
+              <div class="div_options_setedias_price">
+                <p class="name_setedias_name">
+                  USA/Canadá 15 Dias Ilimitado Data <br />(500MB/Dia em alta
+                  velocidade)
+                </p>
+                <div class="price_setedias">
+                  <span class="spansetedias">US$ 12.00</span>
+                  <box-icon name="message-alt-add"></box-icon>
+                  <p class="quantidade_7dias">1</p>
+                  <box-icon name="message-alt-minus"></box-icon>
+                  <button class="add_cart_setedias">Adicionar</button>
+                </div>
+              </div>
+
+              <div class="div_options_setedias_price">
+                <p class="name_setedias_name">
+                  USA/Canadá 15 Dias Ilimitado Data <br />(1GB/Dia em alta
+                  velocidade)
+                </p>
+                <div class="price_setedias">
+                  <span class="spansetedias">US$ 17.00</span>
+                  <box-icon name="message-alt-add"></box-icon>
+                  <p class="quantidade_7dias">1</p>
+                  <box-icon name="message-alt-minus"></box-icon>
+                  <button class="add_cart_setedias">Adicionar</button>
+                </div>
+              </div>
+
+              <div class="div_options_setedias_price">
+                <p class="name_setedias_name">
+                  USA/Canadá 15 Dias Ilimitado Data <br />(2GB/Dia em alta
+                  velocidade)
+                </p>
+                <div class="price_setedias">
+                  <span class="spansetedias">US$ 25.00</span>
+                  <box-icon name="message-alt-add"></box-icon>
+                  <p class="quantidade_7dias">1</p>
+                  <box-icon name="message-alt-minus"></box-icon>
+                  <button class="add_cart_setedias">Adicionar</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 15 DIAS COMPRAR -->
+
+            <!-- 15 DIAS COMPRAR -->
+
+            <div class="list_options_vintedias_usa list_options1" id="opcao20">
+              <h1>Melhores opções para sua viagem de até 20 dias</h1>
+              <div class="div_options_setedias_price">
+                <p class="name_setedias_name">
+                  USA/Canadá 20 Dias Ilimitado Data <br />(500MB/Dia em alta
+                  velocidade)
+                </p>
+                <div class="price_setedias">
+                  <span class="spansetedias">US$ 12.00</span>
+                  <box-icon name="message-alt-add"></box-icon>
+                  <p class="quantidade_7dias">1</p>
+                  <box-icon name="message-alt-minus"></box-icon>
+                  <button class="add_cart_setedias">Adicionar</button>
+                </div>
+              </div>
+
+              <div class="div_options_setedias_price">
+                <p class="name_setedias_name">
+                  USA/Canadá 20 Dias Ilimitado Data <br />(1GB/Dia em alta
+                  velocidade)
+                </p>
+                <div class="price_setedias">
+                  <span class="spansetedias">US$ 17.00</span>
+                  <box-icon name="message-alt-add"></box-icon>
+                  <p class="quantidade_7dias">1</p>
+                  <box-icon name="message-alt-minus"></box-icon>
+                  <button class="add_cart_setedias">Adicionar</button>
+                </div>
+              </div>
+
+              <div class="div_options_setedias_price">
+                <p class="name_setedias_name">
+                  USA/Canadá 20 Dias Ilimitado Data <br />(2GB/Dia em alta
+                  velocidade)
+                </p>
+                <div class="price_setedias">
+                  <span class="spansetedias">US$ 25.00</span>
+                  <box-icon name="message-alt-add"></box-icon>
+                  <p class="quantidade_7dias">1</p>
+                  <box-icon name="message-alt-minus"></box-icon>
+                  <button class="add_cart_setedias">Adicionar</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 20 DIAS COMPRAR -->
+
+            <!-- 30 DIAS COMPRAR -->
+
+            <div class="list_options_trintadias_usa list_options1" id="opcao30">
+              <h1>Melhores opções para sua viagem de até 30 dias</h1>
+              <div class="div_options_setedias_price">
+                <p class="name_setedias_name">
+                  USA/Canadá 30 Dias Ilimitado Data <br />(500MB/Dia em alta
+                  velocidade)
+                </p>
+                <div class="price_setedias">
+                  <span class="spansetedias">US$ 12.00</span>
+                  <box-icon name="message-alt-add"></box-icon>
+                  <p class="quantidade_7dias">1</p>
+                  <box-icon name="message-alt-minus"></box-icon>
+                  <button class="add_cart_setedias">Adicionar</button>
+                </div>
+              </div>
+
+              <div class="div_options_setedias_price">
+                <p class="name_setedias_name">
+                  USA/Canadá 30 Dias Ilimitado Data <br />(1GB/Dia em alta
+                  velocidade)
+                </p>
+                <div class="price_setedias">
+                  <span class="spansetedias">US$ 17.00</span>
+                  <box-icon name="message-alt-add"></box-icon>
+                  <p class="quantidade_7dias">1</p>
+                  <box-icon name="message-alt-minus"></box-icon>
+                  <button class="add_cart_setedias">Adicionar</button>
+                </div>
+              </div>
+
+              <div class="div_options_setedias_price">
+                <p class="name_setedias_name">
+                  USA/Canadá 30 Dias Ilimitado Data <br />(2GB/Dia em alta
+                  velocidade)
+                </p>
+                <div class="price_setedias">
+                  <span class="spansetedias">US$ 25.00</span>
+                  <box-icon name="message-alt-add"></box-icon>
+                  <p class="quantidade_7dias">1</p>
+                  <box-icon name="message-alt-minus"></box-icon>
+                  <button class="add_cart_setedias">Adicionar</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- 30 DIAS COMPRAR -->
+          </div>
+
+          <ul class="ul_layout_section_estadosunidos" id="ul-list-usa">
+            <li>
+              <box-icon
+                name="check-circle"
+                type="solid"
+                color="#00abff"
+              ></box-icon
+              >Tarifas em Reais
+            </li>
+            <li>
+              <box-icon
+                name="check-circle"
+                type="solid"
+                color="#00abff"
+              ></box-icon
+              >Internet ILIMITADA
+            </li>
+            <li>
+              <box-icon
+                name="check-circle"
+                type="solid"
+                color="#00abff"
+              ></box-icon
+              >Suporte Técnico - 24/7
+            </li>
+            <li>
+              <box-icon
+                name="check-circle"
+                type="solid"
+                color="#00abff"
+              ></box-icon
+              >Chip Físico ou Virtual
+            </li>
+            <li>
+              <box-icon
+                name="check-circle"
+                type="solid"
+                color="#00abff"
+              ></box-icon
+              >Envio para todo o Brasil
+            </li>
+          </ul>
+
+          <div class="button_div_btn">
+            <button class="button-voltar" id="btn-voltar">Voltar</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+
+  <!-- SCRIPT BOX ICONS -->
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+  <!-- SCRIPT MODELOS CELULARES -->
+  <script src="./js/scriptmodels.js"></script>
+  <!-- SCRIPT MODELOS CELULARES -->
+
+  <!-- SCRIPTMENUMOBILE -->
+
+  <script src="./js/menumobile.js"></script>
+  <!-- MENUMOBILE -->
+
+  <script src="./js/scriptcards.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  <script>
+    $(() => {
+      // document ready
+      start();
+    });
+  </script>
 </html>
