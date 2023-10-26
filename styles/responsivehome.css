@@ -11,6 +11,10 @@
   );
   --color-blue-escuro: #2b8bec;
   --color-alternative: #22176e;
+
+  --color-orange: #ff9a3e;
+  --color-blue-palet: #0089e4;
+  --color-blackblue: #083D74;
 }
 
 @media screen and (max-width: 900px) and (min-width: 380px) {
@@ -19,13 +23,21 @@
     background-color: var(--color-blue-escuro);
     padding-left: 20px;
     padding-right: 20px;
+    height: auto;
+    background-color: var(--color-blackblue);
+    background-image: none;
   }
   .top_subsection_home {
-    height: 1800px;
+    height: 90%;
     width: 100%;
     margin: 0px;
     align-items: flex-start;
     justify-content: flex-start;
+    padding: 10px;
+  }
+
+  .top_section_text {
+    height: 300px;
   }
 
   .top_section_text > h1 {
@@ -35,7 +47,7 @@
   }
 
   .p-span {
-    font-size: 20px;
+    font-size: 25px;
     color: var(--color-background);
     font-weight: 700;
   }
@@ -44,7 +56,7 @@
     font-weight: 700;
     font-family: "Poppins", sans-serif;
     font-size: 20px;
-    color: var(--color-alternative);
+    color: var(--color-orange);
   }
 
   .card-all {
@@ -70,7 +82,7 @@
   }
   .section_cards_estadosunidos {
     width: 100%;
-    padding: 0px;
+    padding: 20px;
     margin: 0px;
   }
   .layout_section_click_estadosunidos {
@@ -84,11 +96,7 @@
     width: 100%;
   }
 
-  .img_layout_estadosunidos > img {
-    width: 200px;
-    height: 200px;
-    border-radius: 20px;
-  }
+  
   .text_layout_estadosunidos {
     width: 100%;
     padding: 0px;
@@ -121,20 +129,9 @@
   .button-voltar {
     margin: 10px 10px;
   }
-  .div_options_setedias_price {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    background-color: #e6e6e6;
-    border-radius: 15px;
-    padding: 10px;
-  }
-
-  .div_options_setedias_price > .name_setedias_name {
-    font-size: 16px;
-    font-weight: 500;
+ 
+  .list_options1 {
+    width: 100%;
   }
 
   .button_usa {
@@ -142,5 +139,10 @@
     padding: 10px 50px;
   }
 
+  .grid_plans_options {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+  }
   
 }
