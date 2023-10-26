@@ -12,7 +12,7 @@
   --color-blue-escuro: #2b8bec;
   --color-alternative: #22176e;
 
-  --color-orange: #ffd46e;
+  --color-orange: #ffd488;
   --color-blue-palet: #0089e4;
   --color-blackblue: #083D74;
 
@@ -42,16 +42,16 @@
 }
 
 .p-span {
-  font-size: 30px;
+  font-size: 50px;
   color: var(--color-background);
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .span_home1 {
-  font-weight: 700;
+  font-weight: 800;
   font-family: "Poppins", sans-serif;
   font-size: 60px;
-  color: var(--color-background);
+  color: #ffd488;
 }
 
 #logo {
@@ -89,7 +89,9 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  height: 400px;
+  height: auto;
+  margin-top: 130px;
+  gap: 30px;
 }
 
 .top_section_text > h1 {
@@ -138,15 +140,16 @@
   font-weight: 400;
   font-size: 20px;
   border: 0px;
-  background-color: var(--color-orange);
-  color: var(--color-background);
+  background-color: #ffd488;
+  color: var(--color-black-pantone);
   cursor: pointer;
   margin-top: 20px;
   transition: 0.8s;
 }
 .ver_mais_card_usa:hover {
-  background: var(--color-red-pantone);
+  background: var(--color-glow-roxo);
   transform: scale(1.05);
+  color: var(--color-background);
 }
 .cardimg_usa {
   width: 300px;
