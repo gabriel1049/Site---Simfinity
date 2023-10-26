@@ -15,17 +15,18 @@
   --color-orange: #ff9a3e;
   --color-blue-palet: #0089e4;
   --color-blackblue: #083D74;
+
+  --color-glow-roxo: #9437F0;
+
+  --color-gradient-roxo: linear-gradient(90deg, rgba(0,176,255,1) 0%, rgba(148,55,240,1) 100%);
 }
 
 @media screen and (max-width: 900px) and (min-width: 380px) {
   .top_section_home{
     margin: 0px;
-    background-color: var(--color-blue-escuro);
     padding-left: 20px;
     padding-right: 20px;
     height: auto;
-    background-color: var(--color-blackblue);
-    background-image: none;
   }
   .top_subsection_home {
     height: 90%;
@@ -56,7 +57,7 @@
     font-weight: 700;
     font-family: "Poppins", sans-serif;
     font-size: 20px;
-    color: var(--color-orange);
+    color: var(--color-glow-roxo);
   }
 
   .card-all {

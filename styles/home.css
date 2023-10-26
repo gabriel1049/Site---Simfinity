@@ -15,6 +15,10 @@
   --color-orange: #ff9a3e;
   --color-blue-palet: #0089e4;
   --color-blackblue: #083D74;
+
+  --color-glow-roxo: #9437F0;
+
+  --color-gradient-roxo: linear-gradient(90deg, rgba(0,176,255,1) 0%, rgba(148,55,240,1) 100%);
 }
 
 .headersection {
@@ -47,7 +51,7 @@
   font-weight: 700;
   font-family: "Poppins", sans-serif;
   font-size: 60px;
-  color: var(--color-orange);
+  color: var(--color-glow-roxo);
 }
 
 #logo {
@@ -55,7 +59,7 @@
 }
 
 .top_section_home {
-  background-image: url('../assets/imagens/background/backgroundgradient3.svg');
+  background-image: url('../assets/imagens/background/backgroundgradient.svg');
   width: 100%;
   height: 870px;
   gap: 0px;
@@ -96,8 +100,8 @@
 
 
 .texth1_usa {
-  background: rgb(67,71,140);
-  background: linear-gradient(90deg, rgba(67,71,140,1) 7%, rgba(59,0,168,1) 42%, rgba(28,141,255,1) 94%);
+  background: rgb(145,0,255);
+  background: linear-gradient(90deg, rgba(145,0,255,1) 0%, rgba(14,64,198,1) 100%);
   height: 90px;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
@@ -106,24 +110,25 @@
   justify-content: center;
 }
 .h1_card_usa {
-  font-size: 20px;
+  font-size: 27px;
   font-weight: 400px;
 }
 
 .infos_card_usa {
-  background-color: #fff;
+  background: rgb(145,0,255);
+  background: linear-gradient(90deg, rgba(145,0,255,1) 0%, rgba(14,64,198,1) 100%);
   border-bottom-right-radius: 25px;
   border-bottom-left-radius: 25px;
   height: 160px;
 }
 
 .infos_card_usa > h1 {
-  color: var(--color-black-pantone);
+  color: var(--color-background);
   font-size: 20px;
   font-weight: 400;
 }
 .price_dolar {
-  font-size: 30px;
+  font-size: 35px;
   font-weight: 700;
 }
 
@@ -133,14 +138,14 @@
   font-weight: 400;
   font-size: 20px;
   border: 0px;
-  background-color: var(--color-blackblue);
+  background-color: var(--color-orange);
   color: var(--color-background);
   cursor: pointer;
   margin-top: 20px;
   transition: 0.8s;
 }
 .ver_mais_card_usa:hover {
-  background: var(--color-blue-escuro);
+  background: var(--color-red-pantone);
   transform: scale(1.05);
 }
 .cardimg_usa {
@@ -170,7 +175,6 @@
   justify-content: center;
   font-size: 25px;
   color: var(--color-background);
-  background-image: url('../assets/imagens/background/backgroundespanhacard.svg');
   background-size: cover;
   border-radius: 25px;
   transition: 0.8s;
@@ -187,7 +191,6 @@
   justify-content: center;
   font-size: 25px;
   color: var(--color-background);
-  background-image: url('../assets/imagens/background/backgroundmundicard.svg');
   background-size: cover;
   border-radius: 25px;
   transition: 0.8s;
