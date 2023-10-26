@@ -1,66 +1,63 @@
-// Cards
-let cardEstadosunidos = document.getElementById('cardimagemusa');
-let cardEuropa = document.getElementById('cardimagemeuropa');
-let cardMundial = document.getElementById('cardimagemmundial');
-let sectionCardsUsa = document.getElementById('sectioncardsusa');
+let cardUsa;
+let cardEuropa;
+let cardMundial;
 
-// Variável para rastrear o histórico de estados e seções
-let history = ['card-all'];
+let sectionCardUsa;
+let cardGlobal;
 
-// Função para atualizar o estado
-function setCurrentState(current) {
-  history.push(current);
+let btnVoltar;
+
+let textLayout;
+
+function start() {
+  cardUsa = $("#card-imagem-usa");
+  cardEuropa = $("#card-imagem-europa");
+  cardMundial = $("#card-imagem-mundial");
+  sectionCardUsa = $("#section-card-usa");
+  cardGlobal = $("#card-global");
+  textLayout = $("#text-layout");
+  btnVoltar = $('#btn-voltar');
+
+  cardUsa.click(() => {
+    sectionCardUsa.show();
+    cardGlobal.hide();
+  });
+
+  cardEuropa.click(() => {
+    sectionCardUsa.show();
+    cardGlobal.hide();
+  });
+
+  cardMundial.click(() => {
+    sectionCardUsa.show();
+    cardGlobal.hide();
+  });
+  
+  padrao();
 }
 
-// Função para voltar ao estado anterior
-function goBack() {
-  if (history.length > 1) {
-    history.pop(); // Remove o estado atual do histórico
-    return history[history.length - 1]; // Retorna o último estado no histórico
-  }
-  return 'card-all'; // Se não houver histórico, retorna o estado padrão
+function voltarCardUsa() {
+  sectionCardUsa.hide();
+  cardGlobal.show();
+  btnVoltar.prop("onclick", "voltarCardUsa");
 }
 
-// Função de esconder e aparecer o CHIP VIRTUAL OU CHIP FÍSICO
-let cardsAll = document.getElementsByClassName('card-all');
+function listOptions(id) {
 
-cardEstadosunidos.addEventListener("click", function(){
-  setCurrentState('cardimagemusa'); // Define o estado atual
-  for (let card of cardsAll) {
-    card.style.display = 'none';
-  }
-  sectionCardsUsa.style.display = 'flex';
-});
+  let opcao = $(`#opcao${id}`);
 
-
-function showSection(sectionToShow) {
-  const sections = document.querySelectorAll('.text_layout_estadosunidos');
-  for (let section of sections) {
-    section.style.display = 'none';
-  }
-  sectionToShow.style.display = 'flex';
+  textLayout.hide();
+  opcao.show();
+  btnVoltar.off("click").on("click", () => {
+    textLayout.show();
+    opcao.hide();
+    padrao();
+  });
 }
 
-// Mapeamento de botões para as respectivas seções
-const buttonToSectionMap = {
-  'buttonsetediasusa1': 'list_options_setedias_usa1',
-  'buttondezdiasusa1': 'list_options_dezdias_usa1',
-  'buttondozediasusa1': 'list_options_dozedias_usa1',
-  'buttonquinzediasusa1': 'list_options_quinzedias_usa1',
-  'buttonvintediasusa1': 'list_options_vintedias_usa1',
-  'buttontrintadiasusa1': 'list_options_trintadias_usa1'
-};
-
- // Adicionar eventos aos botões
- for (let buttonId in buttonToSectionMap) {
-    const button = document.getElementById(buttonId);
-    const sectionId = buttonToSectionMap[buttonId];
-
-    button.addEventListener('click', function () {
-        setCurrentState(sectionId); // Define o estado atual
-        showSection(document.getElementById(sectionId));
-    });
-  }
-
-
-
+function padrao() {
+  btnVoltar.click(() => {
+    sectionCardUsa.hide();
+    cardGlobal.show();
+  });
+}
