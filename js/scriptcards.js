@@ -35,6 +35,7 @@ function start() {
   cardMundial.click(() => {
     sectionCardUsa.show();
     cardGlobal.hide();
+    
   });
   
   padrao();
@@ -44,6 +45,7 @@ function voltarCardUsa() {
   sectionCardUsa.hide();
   cardGlobal.show();
   btnVoltar.prop("onclick", "voltarCardUsa");
+  
 }
 
 function listOptions(id) {
@@ -53,17 +55,29 @@ function listOptions(id) {
   textLayout.hide();
   ulListUsa.hide();
   opcao.show();
+  
   btnVoltar.off("click").on("click", () => {
     textLayout.show();
     ulListUsa.show();
     opcao.hide();
+    $([document.documentElement, document.body]).animate({
+      scrollTop: $("#section-card-usa").offset().top -100
+     }, 500);
     padrao();
   });
+
 }
 
 function padrao() {
   btnVoltar.click(() => {
     sectionCardUsa.hide();
     cardGlobal.show();
+    $([document.documentElement, document.body]).animate({
+      scrollTop: $("#section-card-usa").offset().top -100
+     }, 500);
   });
+
+  $([document.documentElement, document.body]).animate({
+    scrollTop: $("#section-card-usa").offset().top -100
+   }, 500);
 }
