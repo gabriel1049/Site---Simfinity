@@ -5,15 +5,10 @@
 :root {
   --color-background: #fff;
   --color-black-pantone: #2d2d2f;
-  --color-red-pantone: #2e3177;
-  --color-blue-header: #bdefff;
-  --color-gradient-blue: linear-gradient(
-    90deg,
-    rgba(71, 61, 125, 1) 12%,
-    rgba(36, 0, 181, 1) 55%,
-    rgba(91, 56, 232, 1) 76%
-  );
-  --color-blue-escuro: #2b8bec;
+  --color-orange-mysimtravel: #ff7d26;
+  --color-roxo-pantone: #3A0CA3;
+  --color-secundary: #fff6f6;
+  --color-alternative: #22176e;
 }
 
 * {

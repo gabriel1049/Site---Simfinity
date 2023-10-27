@@ -1,27 +1,14 @@
 :root {
   --color-background: #fff;
   --color-black-pantone: #2d2d2f;
-  --color-red-pantone: #2e3177;
-  --color-blue-header: #bdefff;
-
-  --color-blue-escuro: #2b8bec;
+  --color-orange-mysimtravel: #ff7d26;
+  --color-roxo-pantone: #3A0CA3;
+  --color-secundary: #fff6f6;
   --color-alternative: #22176e;
-
-  --color-orange: #ffd488;
-  --color-blue-palet: #0089e4;
-  --color-blackblue: #083D74;
-
-  --color-glow-roxo: #9437F0;
-
-
-  --color-roxo-roxo: #FF6B6B;
-  --color-magente: #FF6B6B;
-  --black-blue: #3A0CA3;
-  --color-background: #fff6f6;
 }
 
 body {
-  background: var(--color-background);
+  background: var(--color-secundary);
 }
 
 .headersection {
@@ -33,9 +20,6 @@ body {
   z-index: 100; /* Garante que o cabeçalho fique acima de outros elementos */
   /* Adicione outros estilos desejados, como altura, sombra, etc. */
 }
-
-
-
 
 /* Estilos adicionais para os elementos dentro do cabeçalho, se necessário */
 #nav {
@@ -55,7 +39,7 @@ body {
   font-weight: 800;
   font-family: "Poppins", sans-serif;
   font-size: 60px;
-  color: var(--color-roxo-roxo);
+  color: var(--color-background);
 }
 
 #logo {
@@ -155,7 +139,7 @@ body {
   text-align: center;
   font-size: 20px;
   margin-bottom: 10px;
-  color: var(--black-blue);
+  color: var(--color-roxo-pantone);
 }
 
 .layout_section_click_estadosunidos {
@@ -211,7 +195,7 @@ body {
   font-size: 20px;
   font-weight: 600;
   border-radius: 10px;
-  background-color: var(--color-magente);
+  background-color: var(--color-orange-mysimtravel);
   color: var(--color-background);
   transition: 0.8s;
 }
@@ -233,7 +217,7 @@ body {
   font-size: 20px;
   font-weight: 600;
   border-radius: 10px;
-  background-color: var(--black-blue);
+  background-color: var(--color-orange-mysimtravel);
   color: var(--color-background);
   transition: 0.8s;
   animation: layouot 1s ease 0s 1 normal forwards;
@@ -321,7 +305,7 @@ body {
 .p_add_carrinho {
   font-size: 13px;
   font-weight: 600;
-  background-color: var(--color-blue-escuro);
+  background-color: var(--color-black-pantone);
   padding: 2px 10px;
   border-radius: 50px;
   color: var(--color-background);
@@ -332,7 +316,7 @@ body {
 .p_remove_carrinho {
   font-size: 13px;
   font-weight: 600;
-  background-color: var(--color-blue-escuro);
+  background-color: var(--color-black-pantone);
   padding: 2px 10px;
   border-radius: 50px;
   color: var(--color-background);
@@ -343,7 +327,7 @@ body {
 .btn_add_carinho {
   font-size: 18px;
   color: var(--color-background);
-  background-color: var(--color-magente);
+  background-color: var(--color-orange-mysimtravel);
   border: 0px;
   padding: 10px 15px;
   font-weight: 500;
@@ -354,7 +338,7 @@ body {
 }
 
 .btn_add_carinho:hover {
-  background-color: var(--color-alternative);
+  background-color: var(--color-black-pantone);
 
 }
 
@@ -412,7 +396,7 @@ body {
 
 .texto_apresentacao1 > h1 {
   font-size: 35px;
-  color: var(--color-magente);
+  color: var(--color-orange-mysimtravel);
 }
 
 .img_apresentacao1 > img {
@@ -493,12 +477,12 @@ body {
 
 .title {
     font-size: 26px;
-    color: var(--black-blue);
+    color: var(--color-black-pantone);
     font-family: 'Poppins', sans-serif;
 }
 
 .price {
-    color: #FF6B6B;
+    color: var(--color-orange-mysimtravel);
     font-weight: 700;
     font-size: 2.2rem;
     margin: 15px 0;
@@ -506,12 +490,12 @@ body {
 
 .price_dolar {
     font-size: 16px;
-    color: #FF6B6B;
+    color: var(--color-orange-mysimtravel);
     font-weight: 500;
 }
 
 .description {
-    color: #3b3b3b;
+    color: var(--color-black-pantone);
     font-size: 1.1rem;
     margin: 20px 0 20px;
 }
@@ -519,7 +503,7 @@ body {
 
 .subscribe-button {
     display: flex;
-    background-color: #FF6B6B;
+    background-color: var(--color-orange-mysimtravel);
     color: #fff;
     border-radius: 30px;
     margin-top: 34px;
@@ -536,7 +520,7 @@ body {
 }
 
 .subscribe-button:hover {
-    background: #ff4d4d;
+    background: var(--color-orange-mysimtravel);
 }
 
 .ribbon-wrap {
@@ -553,7 +537,7 @@ body {
     font-size: 0.918rem;
     text-align: center;
     padding: 8px 0;
-    background: #FF6B6B;
+    background: var(--color-orange-mysimtravel);
     color: #fff;
     position: absolute;
     transform: rotate(-45deg);
