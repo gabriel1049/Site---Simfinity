@@ -61,7 +61,7 @@ function listOptions(id) {
     ulListUsa.show();
     opcao.hide();
     $([document.documentElement, document.body]).animate({
-      scrollTop: $("#section-card-usa").offset().top -100
+      scrollTop: $("#section-card-usa").offset().top -0
      }, 500);
     padrao();
   });
