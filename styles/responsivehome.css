@@ -3,22 +3,21 @@
   --color-black-pantone: #2d2d2f;
   --color-red-pantone: #2e3177;
   --color-blue-header: #bdefff;
-  --color-gradient-blue: linear-gradient(
-    90deg,
-    rgba(71, 61, 125, 1) 12%,
-    rgba(36, 0, 181, 1) 55%,
-    rgba(91, 56, 232, 1) 76%
-  );
+
   --color-blue-escuro: #2b8bec;
   --color-alternative: #22176e;
 
-  --color-orange: #ff9a3e;
+  --color-orange: #ffd488;
   --color-blue-palet: #0089e4;
   --color-blackblue: #083D74;
 
   --color-glow-roxo: #9437F0;
 
-  --color-gradient-roxo: linear-gradient(90deg, rgba(0,176,255,1) 0%, rgba(148,55,240,1) 100%);
+
+  --color-roxo-roxo: #FF6B6B;
+  --color-magente: #FF6B6B;
+  --black-blue: #3A0CA3;
+  --color-background: #fff6f6;
 }
 
 @media screen and (max-width: 900px) and (min-width: 380px) {
@@ -39,10 +38,11 @@
 
   .top_section_text {
     height: 300px;
+    width: 100%;
   }
 
   .top_section_text > h1 {
-    font-size: 20px;
+    font-size: 26px;
     color: var(--color-background);
     font-weight: 500;
   }
@@ -56,8 +56,8 @@
   .span_home1 {
     font-weight: 700;
     font-family: "Poppins", sans-serif;
-    font-size: 20px;
-    color: var(--color-glow-roxo);
+    font-size: 26px;
+    color: var(--color-magente);
   }
 
   .card-all {
