@@ -405,12 +405,27 @@ body {
 
 .apresentacao2 {
   display: flex;
+  flex-direction: column;
   padding: 30px 320px;
-  height: 500px;
+  height: auto;
+  gap: 40px;
   align-items: center;
   justify-content: space-between;
-  background: var(--color-alternative);  
+  background: rgb(72,12,168);
+  background: linear-gradient(90deg, rgba(72,12,168,1) 0%, rgba(3,4,94,1) 100%);
   margin-top: -8px;
+}
+
+.text_apresentacao2 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text_apresentacao2 > h1 {
+  font-size: 40px;
+  color: var(--color-background);
 }
 
 
@@ -470,6 +485,37 @@ body {
   text-align: center;
   align-items: center;
 }
+
+.text_informativo1 > h1 {
+  font-size: 25px;
+  color: var(--color-black-pantone);
+}
+
+.text_informativo1 > p {
+  font-size: 15px;
+  color: var(--color-black-pantone);
+}
+
+.text_informativo2 > h1 {
+  font-size: 25px;
+  color: var(--color-black-pantone);
+}
+
+.text_informativo2 > p {
+  font-size: 15px;
+  color: var(--color-black-pantone);
+}
+
+.text_informativo3 > h1 {
+  font-size: 25px;
+  color: var(--color-black-pantone);
+}
+
+.text_informativo3 > p {
+  font-size: 15px;
+  color: var(--color-black-pantone);
+}
+
 
 .text_informativo2 {
   text-align: center;

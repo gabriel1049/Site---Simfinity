@@ -163,8 +163,24 @@
   .apresentacao2 {
     width: 100%;
     flex-direction: column;
-    padding: 0px 20px;
+    padding: 20px 20px;
     margin-top: -8px;
+    align-items: center;
+    background-color: red;
   }
   
+  .text_apresentacao2 > h1 {
+    font-size: 30px;
+    color: var(--color-background);
+    text-align: center;
+  }
+
+  .grid_cards_informativos {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
 }
