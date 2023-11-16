@@ -202,5 +202,14 @@
     display: none;
   }
 
+  .footer_pageinicio {
+    padding: 10px 0px;
+  }
+
+  .container_footer {
+    margin: 10px 10px;
+    flex-direction: column;
+    gap: 30px;
+  }
 
 }

@@ -20,6 +20,7 @@
   background-color: var(--color-orange-mysimtravel);
   border-radius: 20px;
 }
+ 
 :root {
   --color-background: #fff;
   --color-black-pantone: #2d2d2f;
@@ -580,6 +581,98 @@ figure > img {
   width: 600px;
   height: 600px
 }
+
+
+.footer_pageinicio {
+  width: 100%;
+  height: auto;
+  background-color: var(--color-alternative);
+  padding: 30px 0px;
+}
+.container_footer {
+  margin: 30px 320px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.footer_logos_empresa {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.footer_logos_empresa > img {
+  width: 250px;
+}
+
+.footer_logos_empresa > p {
+  font-size: 15px;
+  color: var(--color-background);
+}
+
+.nav_links_social_footer > h2  {
+  font-size: 18px;
+  color: var(--color-background);
+  font-weight: 500;
+}
+.nav_links_social_footer > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.nav_links_social_footer > ul > li {
+  list-style: none;
+}
+.nav_links_social_footer > ul > li > a {
+  text-decoration: none;
+  color: #ff7d26;
+}
+.nav_links_social_footer > ul > li > a:hover{
+  color: var(--color-background);
+}
+
+.Links_social_footer > h2 {
+  font-size: 18px;
+  color: var(--color-background);
+}
+.Links_social_footer > aside {
+  align-items: center;
+  justify-content: center;
+}
+.Links_social_footer > aside > i {
+  font-size: 50px;
+  cursor: pointer;
+}
+
+.footer_endeco {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.footer_endeco > .box_contato_footer > h2 {
+  font-size: 18px;
+  color: var(--color-background);
+}
+
+.footer_endeco > .box_contato_footer > p {
+  font-size: 18px;
+  color: var(--color-orange-mysimtravel);
+}
+
+.footer_endeco > .box_endereco_footer > h2 {
+  font-size: 18px;
+  color: var(--color-background);
+}
+
+.footer_endeco > .box_endereco_footer > p {
+  font-size: 18px;
+  color: var(--color-orange-mysimtravel);
+}
+
 
 
 
