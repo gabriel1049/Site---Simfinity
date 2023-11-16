@@ -175,7 +175,7 @@ a:hover {
 
 /* Section principal header */
 
-#logomobile {
+#logo-mobile {
   display: none;
 }
 #carrinhomobile1 {
@@ -218,11 +218,11 @@ a:hover {
     display: none;
   }
 
-  #logodesktop {
+  #logo-desktop {
     display: none;
   }
 
-  #logomobile {
+  #logo-mobile {
     display: flex;
     align-items: center;
     justify-content: center;

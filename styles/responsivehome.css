@@ -183,4 +183,24 @@
     gap: 30px;
   }
 
+  .section_informativo_produto { 
+      width: 100%;
+      flex-direction: column;
+      padding: 0px 20px;
+      margin-top: 20px;
+  }
+  .article_informativo_produto {
+    width: 100%;
+    text-align: center;
+  }
+
+  .article_informativo_produto > h2 {
+    font-size: 20px;
+  }
+
+  figure {
+    display: none;
+  }
+
+
 }
