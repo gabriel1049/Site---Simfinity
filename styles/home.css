@@ -544,11 +544,11 @@ body {
 }
 
 .article_informativo_produto {
-  width: 600px;
+  width: 500px;
 }
 
 .article_informativo_produto > h2 {
-  font-size: 26px;
+  font-size: 50px;
   font-weight: 500;
   color: var(--color-alternative);
 
