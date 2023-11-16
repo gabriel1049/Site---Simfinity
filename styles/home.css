@@ -548,9 +548,9 @@ body {
 }
 
 .article_informativo_produto > h2 {
-  font-size: 24px;
-  font-weight: 400;
-  color: #2d2d2f;
+  font-size: 26px;
+  font-weight: 500;
+  color: var(--color-alternative);
 
 }
 
