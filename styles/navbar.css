@@ -157,7 +157,7 @@ a:hover {
   gap: 10px;
 }
 
-.suporte-header > h1 {
+.suporte-header > h2 {
   font-size: 15px;
   font-weight: 400;
   color: var(--color-background);
