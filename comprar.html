@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="O melhor chip de internet GLOBAL ilimitada para a sua viagem ao exterior, se conecte-se ao mundo sem dificuldades">
+
+    <script src="./js/vue.js"></script>
+
+    <link
+      rel="icon"
+      href="./assets/imagens/icones/favicon/favicon2.svg"
+      type="image/x-icon"
+    />
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- boxicons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- TITULO DA PÁGINA -->
+    <title>simfinity</title>
+
+    <!-- LINK CSS -->
+    <link rel="stylesheet" href="./styles/global.css" />
+  </head>
+
+  <body>
+    <!-- HEADER PRINCIPAL -->
+
+    <section class="headersection">
+      <!-- NÚMERO DO WhatsApp -->
+      <div class="suporte-header" id="texticonsuporte">
+        <box-icon type="logo" name="whatsapp" color="#fff"></box-icon>
+        <h2>WhatsApp - 22/7</h2>
+        <p>+55 (11) 98734-1818</p>
+      </div>
+      <!-- NÚMERO DO WhatsApp -->
+
+      <header class="headermenu" id="header">
+        <section class="divlogo" id="logo-desktop">
+          <img
+            src="./assets/imagens/header/logoheader.svg"
+            alt="Logo do inicio que fica no header"
+            id="logo"
+            onclick="redirectToIndex()"
+          />
+        </section>
+
+        <nav id="nav">
+          <button
+            aria-label="Abrir Menu"
+            id="btn-mobile"
+            aria-haspopup="true"
+            aria-controls="menu"
+            aria-expanded="false"
+          >
+            <span id="hamburger"></span>
+          </button>
+
+          <section class="divlogo" id="logo-mobile">
+            <img
+              src="./assets/imagens/header/logoheader.svg"
+              alt=" LOGO Simfinity "
+              id="logo"
+              onclick="redirectToIndex()"
+            />
+          </section>
+
+          <ul id="menu" role="menu">
+            <li id="listhover"><a href="/">Planos</a></li>
+            <li id="listhover"><a href="/">Sobre nós</a></li>
+            <li id="listhover"><a href="/">Suporte</a></li>
+            <li id="listhover"><a href="/">Como funciona</a></li>
+
+            <a href="./login/login.html">
+              <button class="b-acess-client" id="buttonhover-mobile">
+                <span>Entrar</span> <box-icon name="user"></box-icon>
+              </button>
+            </a>
+          </ul>
+
+          <a href="./login/login.html">
+            <button class="b-acess-client">
+              <span>Entrar</span> <box-icon name="user"></box-icon>
+            </button>
+          </a>
+
+          <div class="carrinhodecompras" id="carrinhomobile1">
+            <box-icon class="cart-icon" name="cart" cl></box-icon>
+          </div>
+        </nav>
+
+        <span class="spanlineheader">I</span>
+
+        <div class="carrinhodecompras">
+          <box-icon class="cart-icon" name="cart" cl></box-icon>
+        </div>
+      </header>
+    </section>
+
+
+    <section class="top_line_comprar">
+        <h2>
+            O melhor plano de internet <br>para sua viagem ao Estados Unidos
+        </h2>
+    </section>
+
+
+
+
+
+
+    
+
+    <footer class="footer_pageinicio">
+    <section class="container_footer">
+      <section class="footer_logos_empresa">
+        <img src="./assets/imagens/header/logofooter.svg" alt=" Imagem do logo Simfinity ">
+        <p>SGMobile LTDA - Todos os direitos reservados</p>
+        <p>Este site usa cookies para garantir que você obtenha a melhor<br> experiência em nosso site. Termos e Condições</p>
+      </section>
+
+      <nav class="nav_links_social_footer">
+        <h2>
+          Nossos Links
+        </h2>
+
+        <ul>
+          <li><a href="#">Como comprar</a></li>
+          <li><a href="#">Como Funciona</a></li>
+          <li><a href="#">Como Configurar</a></li>
+          <li><a href="#">Suporte Técnico</a></li>
+          <li><a href="#">Planos</a></li>
+
+        </ul>
+      </nav>
+
+      <section class="Links_social_footer">
+        <h2>Nossas Redes Sociais</h2>
+        <aside>
+          <i class='bx bxl-instagram' style='color:#ff7d26' ></i>
+          <i class='bx bxl-whatsapp' style='color:#ff7d26' ></i>
+          <i class='bx bxl-facebook-circle' style='color:#ff7d26' ></i>
+        </aside>
+      </section>
+
+      <section class="footer_endeco">
+        <article class="box_contato_footer">
+        <h2>Contato</h2>
+        <p>contato@simfinity.com.br</p>
+        </article>
+
+        <article class="box_endereco_footer">
+        <h2>Endereço Comercial</h2>
+        <p>Rua Domingos de Morais <br>
+          2187 - Torre Paris Sala 707</p>
+        </article>
+      </section>
+
+      
+    </section>
+    </footer>
+  </body>
+
+  <!-- SCRIPT BOX ICONS -->
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+  <!-- SCRIPT MODELOS CELULARES -->
+  <script src="./js/scriptmodels.js"></script>
+  <!-- SCRIPT MODELOS CELULARES -->
+
+  <!-- SCRIPTMENUMOBILE -->
+
+  <script src="./js/menumobile.js"></script>
+  <!-- MENUMOBILE -->
+
+  <script src="./js/scriptcards.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+
+
+
+
+  <script>
+    $(() => {
+      // document ready
+      start();
+    });
+  </script>
+</html>

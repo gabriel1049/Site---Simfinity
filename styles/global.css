@@ -1,6 +1,7 @@
 @import url('./navbar.css');
 @import url('./home.css');
 @import url('./responsivehome.css');
+@import url('./comprar.css');
 
 :root {
   --color-background: #fff;
